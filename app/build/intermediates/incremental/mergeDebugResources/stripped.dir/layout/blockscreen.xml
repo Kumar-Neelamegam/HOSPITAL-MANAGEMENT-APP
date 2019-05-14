@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_marginBottom="@dimen/spacing_medium"
+    android:layout_marginLeft="@dimen/spacing_middle"
+    android:layout_marginRight="@dimen/spacing_middle"
+    android:layout_marginTop="@dimen/spacing_medium"
+    android:visibility="visible"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/mobydoctor_logo" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="@string/sorry_we_regret_to_know_that_you_have_lost_your_device"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/PositiveButton"
+            android:background="@color/green_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exit" />
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

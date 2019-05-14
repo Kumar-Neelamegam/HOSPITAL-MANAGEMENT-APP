@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/investigation_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kdmc_kumar.Core_Modules.Investigations">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--- Toolbar Layout -->
+        <include
+            layout="@layout/common_toolbar_with_two_action_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <!-- Main Layout -->
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/investigation_nesetedscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/grey_200"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Top Layout -->
+                <LinearLayout
+                    android:id="@+id/upperlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ourcolour"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/ourcolourgrey"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:text="@string/patient_details"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="175dp"
+                            android:background="@color/ourcolour"
+                            android:orientation="vertical">
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.6"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/banner_top1" />
+
+
+                        </LinearLayout>
+
+                        <kdmc_kumar.Utilities_Others.CircleImageView
+                            android:id="@+id/imgvw_patientphoto"
+                            android:layout_width="210dp"
+                            android:layout_height="210dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="5dp"
+                            app:civ_border_color="#ffffff"
+                            app:civ_border_width="3dp"
+                            app:srcCompat="@drawable/ic_user_avatar" />
+
+                        <TextView
+                            android:id="@+id/tvw_agegender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgvw_patientphoto"
+                            android:background="#80ffffff"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/hypon"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <!-- Patient Name -->
+                        <TextView
+                            android:id="@+id/txtvw_title_patientname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/entrpname"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textStyle="normal" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autocomplete_patientname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:padding="5dp"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textCursorDrawable="@null"
+                            tools:ignore="LabelFor" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/White" />
+
+                        <!-- TreatmentFor -->
+                        <TextView
+                            android:id="@+id/txtvw_treatmentfor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/symptoms_mandatory"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textStyle="normal" />
+
+                        <MultiAutoCompleteTextView
+                            android:id="@+id/multiauto_treatmentfor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:maxLength="256"
+                            android:imeOptions="actionNext"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textCursorDrawable="@null" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/White" />
+
+
+                        <!-- Provisional Diagnosis -->
+                        <TextView
+                            android:id="@+id/txtvw_diagnosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/dddignodtls"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textStyle="normal" />
+
+
+                        <MultiAutoCompleteTextView
+                            android:id="@+id/multiauto_diagnosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:maxLength="256"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textCursorDrawable="@null" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/White" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- MEDICAL TEST INFO -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/general_test"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_test"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_investigation_test"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+
+                                <Button
+                                    android:id="@+id/button_my_preferred_testlist"
+                                    style="@style/PositiveButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="@string/my_preferred_test_list" />
+
+                                <Button
+                                    android:id="@+id/button_all_test"
+                                    style="@style/PositiveButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="@string/all_test"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimaryDark"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="@string/testname" />
+                                <View
+                                    android:layout_width="2dp"
+                                    android:background="@color/white"
+                                    android:layout_height="match_parent"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="@string/subtest_name" />
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recylerView_test"
+
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/ourcolour"
+                                android:textColor="@color/ourcolour" />
+
+                            <TextView
+                                android:id="@+id/txtvw_totaltestcount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="@string/hypon"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_investigation_test"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- MEDICAL SCAN INFO -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/scan_name"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_investigation_scan"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+
+                        </LinearLayout>
+
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_investigation_scan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+
+                            <Spinner
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:id="@+id/spinner_scan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:spinnerMode="dialog" />
+
+
+                            <MultiAutoCompleteTextView
+                                android:id="@+id/scanfor_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:cursorVisible="true"
+                                android:drawableBottom="@android:color/transparent"
+                                android:ems="10"
+                                android:hint="@string/scan_for"
+                                android:inputType="textPostalAddress"
+                                android:maxLength="256"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColorHint="@android:color/darker_gray"
+                                android:textCursorDrawable="@null"
+                                android:visibility="gone" />
+
+
+                            <Button
+                                android:id="@+id/button_scanforadd"
+                                style="@style/PositiveButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:text="@string/add"
+                                android:textColor="@color/white" />
+
+
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimaryDark"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="@string/scanname" />
+                                <View
+                                    android:layout_width="2dp"
+                                    android:background="@color/white"
+                                    android:layout_height="match_parent"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="@string/subscanname" />
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recylerView_scan"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_investigation_scan"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- MEDICAL XRAY INFO -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/x_ray"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_investigation_xray"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+
+                        </LinearLayout>
+
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_investigation_xray"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/multiauto_xray"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@color/grey_300"
+                                android:cursorVisible="true"
+                                android:drawableBottom="@android:color/transparent"
+                                android:ems="10"
+                                android:hint="@string/choose"
+                                android:imeOptions="normal"
+                                android:inputType="textPostalAddress"
+                                android:maxLength="256"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColorHint="@android:color/darker_gray"
+                                android:textCursorDrawable="@null" />
+
+
+                            <Button
+                                android:id="@+id/button_xrayadd"
+                                style="@style/PositiveButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:text="@string/add"
+                                android:textColor="@color/white" />
+
+                            <ListView
+                                android:id="@+id/listview_investigation_xray"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_weight="0.00"
+                                android:divider="#939598"
+                                android:dividerHeight="1dp"
+                                android:listSelector="@drawable/list_selector" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_investigation_xray"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- MEDICAL EEG INFO -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/ecg"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_investigation_ecg"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_investigation_ecg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+
+                            <CheckBox
+                                android:id="@+id/checkbox_ecg_option1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="onCheckBoxClicked"
+                                android:padding="5dp"
+                                android:text="@string/ecg" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_ecg_option2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="onCheckBoxClicked"
+                                android:padding="5dp"
+                                android:text="@string/ecg_treadmill" />
+
+                            <EditText
+                                android:id="@+id/edt_ecg_comments"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:hint="@string/comment"
+                                android:maxLength="256"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:inputType="text" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_investigation_ecg"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- MEDICAL ECG INFO -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/eeg"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_investigation_eeg"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_investigation_eeg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <CheckBox
+                                android:padding="5dp"
+                                android:id="@+id/checkbox_eeg_option1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="onCheckBoxClicked"
+                                android:text="@string/eeg" />
+
+                            <EditText
+                                android:id="@+id/edt_eeg_comment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:hint="@string/comment"
+                                android:maxLength="256"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:inputType="text" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_investigation_eeg"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- MEDICAL ANGIOGRAM INFO -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/angiogram"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_investigation_angiogram"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_investigation_angio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/checkbox_angio_coronary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:padding="5dp"
+                                            android:onClick="onCheckBoxClicked"
+                                            android:text="@string/coronary" />
+
+                                        <CheckBox
+                                            android:padding="5dp"
+                                            android:id="@+id/checkbox_angio_brain"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:onClick="onCheckBoxClicked"
+                                            android:text="@string/brain" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <CheckBox
+                                            android:padding="5dp"
+                                            android:id="@+id/checkbox_angio_lowerlimb"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:onClick="onCheckBoxClicked"
+                                            android:text="@string/lower_limb" />
+
+                                        <CheckBox
+                                            android:padding="5dp"
+                                            android:id="@+id/checkbox_angio_mesenteric"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:onClick="onCheckBoxClicked"
+                                            android:text="@string/mesenteric" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <CheckBox
+                                            android:padding="5dp"
+                                            android:id="@+id/checkbox_angio_upperlimb"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:onClick="onCheckBoxClicked"
+                                            android:text="@string/upper_limb" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/edt_angio_comments"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:background="@color/grey_300"
+                                    android:ems="10"
+                                    android:hint="@string/comment"
+                                    android:maxLength="256"
+                                    android:padding="10dp"
+                                    android:inputType="text" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/grey_10" />
+
+                                <Button
+                                    android:id="@+id/hide_investigation_angio"
+                                    style="@style/Widget.AppCompat.Button.Borderless"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:gravity="center"
+                                    android:text="@string/hide" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- Diagnosis Details -->
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/preferred_diagnostic_center"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_investigation_prefadddiagcentre"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+
+                        </LinearLayout>
+
+                        <!-- Primary Layout -->
+                        <LinearLayout
+                            android:id="@+id/primary_preflayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="@string/diagnostic_center"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/ourcolour"
+                                android:textStyle="bold" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplete_diagcenter_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="10"
+                                android:background="@color/grey_300"
+                                android:completionThreshold="1"
+                                android:ems="10"
+                                android:enabled="false"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:textColor="@drawable/selector_new" />
+
+                            <TextView
+                                android:padding="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/diagnostic_center_address"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/ourcolour"
+                                android:textStyle="bold" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplete_diagcenter_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:enabled="false"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:textColor="@drawable/selector_new" />
+
+                            <CheckBox
+                                android:id="@+id/setasdefault"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/set_as_default_preferred_diagnostic_center"
+                                android:visibility="gone" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_prefdiagcenterinfo"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <!-- Bottom Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:paddingTop="5dp">
+
+
+            <Button
+                android:id="@+id/button_cancel"
+                style="@style/NegativeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/button_skiptoprescription"
+                style="@style/PositiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:text="@string/skip_to_prescription"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button_submit"
+                style="@style/PositiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <!-- Footer Layout -->
+        <include
+            layout="@layout/common_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

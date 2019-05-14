@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:divider="#FF6600"
+    android:orientation="vertical"
+    android:showDividers="beginning|end">
+
+
+    <LinearLayout
+        android:id="@+id/imgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/material_bg_1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <kdmc_kumar.Utilities_Others.CircleImageView
+            android:id="@+id/img_banner"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#fff"
+            app:civ_border_width="5dp"
+            app:srcCompat="@drawable/image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/str_welcome_to_mobydoctor"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#95ffffff" />
+
+        <TextView
+            android:id="@+id/title_doctorname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/hypon"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/menuImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/age" />
+
+        <TextView
+            android:id="@+id/menuName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/hypon"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

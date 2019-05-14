@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:padding="10dp">
+
+    <kdmc_kumar.Utilities_Others.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        app:border_color="#ffffff"
+
+        app:corner_radius="30dip"
+        app:is_oval="true"
+        app:round_background="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/ourcolour" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/ourcolour"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

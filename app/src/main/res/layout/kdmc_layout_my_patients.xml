@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mypatient_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/mypatient_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="70dip"
+                android:background="@drawable/toolbar_dropshadow"
+                android:padding="10dp"
+                app:layout_collapseMode="pin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/mypatient_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/back_ic" />
+
+
+                    <TextView
+                        android:id="@+id/txvw_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/my_patients"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/mypatient_btn_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_home" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/imgvw_list_to_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/list" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/imgvw_menu_option"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_menu" />
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/imgvw_exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_close" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <!-- Main Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <!-- Search Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardvw_search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_margin="@dimen/spacing_middle"
+                    android:clipToPadding="false"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="?android:attr/actionBarSize"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/todo"
+                            android:tint="@color/grey_60"
+                            app:srcCompat="@drawable/ic_search_black_24dp" />
+
+                        <EditText
+                            android:id="@+id/edittext_search"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/search"
+                            android:imeOptions="actionSearch"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:singleLine="true">
+
+                        </EditText>
+
+                        <ImageButton
+                            android:id="@+id/button_clear"
+                            android:layout_width="?android:attr/actionBarSize"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:contentDescription="@string/todo"
+                            android:focusable="true"
+                            android:tint="@color/grey_60"
+                            app:srcCompat="@drawable/ic_whiteclr_close" />
+
+                        <ImageButton
+                            android:id="@+id/button_refresh"
+                            android:layout_width="?android:attr/actionBarSize"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:contentDescription="@string/todo"
+                            android:focusable="true"
+                            android:tint="@color/grey_60"
+                            app:srcCompat="@drawable/ic_refresh_black_24dp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <!-- Recycler list -->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/textvw_patient_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/ourcolour"
+                    android:padding="5dp"
+                    android:text="@string/hypon"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_view_all_patients"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="@string/showallpatients"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/white" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imagevw_no_data_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:srcCompat="@drawable/no_data" />
+
+          <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+                android:id="@+id/mypatient_fastscrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+              android:layoutAnimation="@anim/layout_animation_from_bottom"
+                android:nestedScrollingEnabled="false"
+                android:scrollbarStyle="insideInset"
+                app:fastScrollPopupBgColor="@color/colorAccent"
+                app:fastScrollPopupTextColor="@android:color/primary_text_dark"
+                app:fastScrollThumbColor="@color/yellow_900"
+                app:fastScrollTrackColor="@color/green_A700" />
+
+
+
+        </LinearLayout>
+
+
+        <!-- Footer Layout -->
+        <include
+            layout="@layout/common_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

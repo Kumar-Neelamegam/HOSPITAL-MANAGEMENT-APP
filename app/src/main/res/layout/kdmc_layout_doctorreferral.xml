@@ -1,0 +1,559 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <!--- Toolbar Layout -->
+            <include
+                layout="@layout/common_toolbar_with_two_action_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nesetedscrollview_doctorreferral"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/grey_200"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <!-- Top Layout -->
+                <LinearLayout
+                    android:id="@+id/upperlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ourcolour"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/ourcolourgrey"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:text="@string/patient_details"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="175dp"
+                            android:background="@color/ourcolour"
+                            android:orientation="vertical">
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.6"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/banner_top1" />
+
+
+                        </LinearLayout>
+
+                        <kdmc_kumar.Utilities_Others.CircleImageView
+                            android:id="@+id/imgvw_patientphoto"
+                            android:layout_width="210dp"
+                            android:layout_height="210dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="5dp"
+                            app:civ_border_color="#ffffff"
+                            app:civ_border_width="3dp"
+                            app:srcCompat="@drawable/ic_user_avatar" />
+
+                        <TextView
+                            android:id="@+id/tvw_agegender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgvw_patientphoto"
+                            android:background="#80ffffff"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/hypon"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <!-- Patient Name -->
+                        <TextView
+                            android:id="@+id/txtvw_title_patientname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/entrpname"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textStyle="normal" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autocomplete_patientname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:imeOptions="actionNext"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textCursorDrawable="@null"
+                            tools:ignore="LabelFor" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/White" />
+
+                        <!-- TreatmentFor -->
+                        <TextView
+                            android:id="@+id/txtvw_treatmentfor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/symptoms_mandatory"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textStyle="normal" />
+
+                        <MultiAutoCompleteTextView
+                            android:id="@+id/multiauto_treatmentfor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:imeOptions="actionNext"
+                            android:maxLength="256"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textCursorDrawable="@null"
+                            tools:ignore="LabelFor" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/White" />
+
+
+                        <!-- Provisional Diagnosis -->
+                        <TextView
+                            android:id="@+id/txtvw_diagnosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/dddignodtls"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textStyle="normal" />
+
+
+                        <MultiAutoCompleteTextView
+                            android:id="@+id/multiauto_diagnosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:maxLength="256"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textCursorDrawable="@null"
+                            tools:ignore="LabelFor" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/White" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- Main Content -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/refferal_dco"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/primary_referral_doctor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/textview_doctorname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/doctorname"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplete_doctorname"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:inputType="textCapSentences|textPostalAddress"
+                                android:maxLength="64"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                tools:ignore="LabelFor" />
+
+
+                            <TextView
+                                android:id="@+id/textview_specialization"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/splin"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <Spinner
+                                android:id="@+id/spinner_specialist"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:spinnerMode="dialog" />
+
+                            <TextView
+                                android:id="@+id/textview_specialist"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:text="" />
+
+                            <TextView
+                                android:id="@+id/textview_referredfrom_hospital"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/referred_from_hospital"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <EditText
+                                android:id="@+id/edttext_referredfrom_hospital"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:inputType="text|textCapSentences|textPersonName|textPostalAddress"
+                                android:maxLength="120"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                tools:ignore="LabelFor" />
+
+
+                            <TextView
+                                android:id="@+id/textview_referredto_hospital"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/referred_to_hospital"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplete_referredto_hospital"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:inputType="text|textCapSentences|textPersonName|textPostalAddress"
+                                android:maxLength="120"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                tools:ignore="LabelFor" />
+
+
+                            <TextView
+                                android:id="@+id/textview_clinicalname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/hospname"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <EditText
+                                android:id="@+id/edittext_clinicalname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:inputType="text|textCapSentences|textPersonName|textPostalAddress"
+                                android:maxLength="120"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                tools:ignore="LabelFor" />
+
+                            <TextView
+                                android:id="@+id/textview_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/addrs"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <EditText
+                                android:id="@+id/edittext_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:inputType="textCapSentences|textPersonName|textPostalAddress"
+                                android:maxLength="256"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                tools:ignore="LabelFor" />
+
+                            <TextView
+                                android:id="@+id/textview_emailid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/email_id"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <EditText
+                                android:id="@+id/edittext_emailid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:inputType="textEmailAddress"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                tools:ignore="LabelFor" />
+
+
+                            <TextView
+                                android:id="@+id/textview_mobilenumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/mobile_number"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <EditText
+                                android:id="@+id/edittext_mobilenumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                tools:ignore="LabelFor" />
+
+
+                            <TextView
+                                android:id="@+id/textview_remarks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/drrefremarks"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <EditText
+                                android:id="@+id/edittext_remarks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:inputType="textCapSentences|textPostalAddress"
+                                android:maxLength="120"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                tools:ignore="LabelFor" />
+
+                            <TextView
+                                android:id="@+id/textview_remarkscontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/referral_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <MultiAutoCompleteTextView
+                                android:id="@+id/multiautocomplete_remarks_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:background="@color/grey_200"
+                                android:ems="10"
+                                android:inputType="textMultiLine"
+                                android:maxLength="1200"
+                                android:padding="10dp"
+                                android:text="@string/herewith_i_refer_the_above_patient_with_complaints_of_the_above_symptoms_for_your_expert_opinion_and_management"
+                                tools:ignore="LabelFor" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/button_cancel"
+                style="@style/NegativeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/white"
+                android:layout_marginEnd="5dp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_submit"
+                style="@style/PositiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:layout_marginEnd="5dp"
+                tools:ignore="RtlHardcoded" />
+
+
+        </LinearLayout>
+
+        <!-- Footer Layout -->
+        <include
+            layout="@layout/common_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

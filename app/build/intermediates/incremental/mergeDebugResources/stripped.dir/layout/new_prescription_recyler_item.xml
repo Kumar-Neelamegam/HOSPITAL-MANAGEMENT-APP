@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="120dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#3d5987"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Sl.No"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="240dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Medicine Name"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="160dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Interval"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="160dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Frequency"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="185dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Duration"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="185dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Doctor"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

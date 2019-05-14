@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+        <ignore path="res/layout/taskgallery.xml" />
+        <ignore path="res/layout/workout4.xml" />
+    </issue>
+    <issue id="DisableBaselineAlignment">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+        <ignore path="res/layout/workout4.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+        <ignore path="res/layout/taskgallery.xml" />
+        <ignore path="res/layout/workout4.xml" />
+    </issue>
+    <issue id="InefficientWeight">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+    </issue>
+    <issue id="NestedScrolling">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+        <ignore path="res/layout/workout4.xml" />
+    </issue>
+    <issue id="NestedWeights">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+        <ignore path="res/layout/workout4.xml" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/displ/mobydoctor/assistantmodule/Assistant_Appointment_Activity.java" />
+    </issue>
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+    </issue>
+    <issue id="RtlHardcoded">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+    </issue>
+    <issue id="RtlSymmetry">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+    </issue>
+    <issue id="ScrollViewSize">
+        <ignore path="res/layout/workout4.xml" />
+    </issue>
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="TooManyViews">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+        <ignore path="res/layout/workout4.xml" />
+    </issue>
+    <issue id="UnknownIdInLayout">
+        <ignore path="res/layout/workout4.xml" />
+    </issue>
+    <issue id="UseCompoundDrawables">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+        <ignore path="res/layout/taskgallery.xml" />
+        <ignore path="res/layout/workout4.xml" />
+    </issue>
+    <issue id="UselessLeaf">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/layout_clinical_information.xml" />
+        <ignore path="res/layout/taskgallery.xml" />
+    </issue>
+</lint>

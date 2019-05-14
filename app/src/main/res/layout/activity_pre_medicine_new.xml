@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="70dip"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                app:layout_collapseMode="pin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/back_ic" />
+
+                    <TextView
+                        android:id="@+id/txvw_title"
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/agegen"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/my_preferred_n_medicine_list"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/home_ic" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_exit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_close" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/TextView001"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/medicine_name"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#3d5987"
+                        android:textStyle="bold" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_medname"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:cursorVisible="true"
+                        android:drawableBottom="@android:color/transparent"
+                        android:ems="10"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="25sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/ic_add"
+                        style="@style/PositiveButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/add_medicines" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <android.support.v7.widget.RecyclerView
+
+                    android:id="@+id/recyler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Footer Layout -->
+        <include
+            layout="@layout/common_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

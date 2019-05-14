@@ -1,0 +1,806 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/casenotes_parent_layout"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--- Toolbar Layout -->
+        <include
+            layout="@layout/common_toolbar_with_two_action_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <!-- Main Layout -->
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/casenotes_nestedscrollview"
+            android:fillViewport="true"
+            android:layout_weight="1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <!-- Top Layout -->
+                <LinearLayout
+                    android:id="@+id/upperlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ourcolour"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/ourcolourgrey"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:text="@string/patient_details"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="175dp"
+                            android:background="@color/ourcolour"
+                            android:orientation="vertical">
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.6"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/banner_top1" />
+
+
+                        </LinearLayout>
+
+                        <kdmc_kumar.Utilities_Others.CircleImageView
+                            android:id="@+id/imgvw_patientphoto"
+                            android:layout_width="210dp"
+                            android:layout_height="210dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/ic_user_avatar"
+                            app:civ_border_color="#ffffff"
+                            app:civ_border_width="3dp" />
+
+                        <TextView
+                            android:id="@+id/tvw_agegender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgvw_patientphoto"
+                            android:background="#80ffffff"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/hypon"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <!-- Patient Name -->
+                        <TextView
+                            android:id="@+id/txtvw_title_patientname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/entrpname"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textStyle="normal" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autocomplete_patientname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:imeOptions="actionNext"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textCursorDrawable="@null"
+                            tools:ignore="LabelFor" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/White" />
+
+                        <!-- TreatmentFor -->
+                        <TextView
+                            android:id="@+id/txtvw_treatmentfor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/symptoms_mandatory"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textStyle="normal" />
+
+                        <MultiAutoCompleteTextView
+                            android:id="@+id/multiauto_treatmentfor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:imeOptions="actionNext"
+                            android:maxLength="256"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textCursorDrawable="@null" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/White" />
+
+
+                        <TextView
+                            android:id="@+id/txtvw_signs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/signs"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textStyle="normal" />
+
+                        <MultiAutoCompleteTextView
+                            android:id="@+id/multiauto_signs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:imeOptions="actionNext"
+                            android:maxLength="256"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textCursorDrawable="@null" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/White" />
+
+
+                        <!-- Provisional Diagnosis -->
+                        <TextView
+                            android:id="@+id/txtvw_diagnosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/dddignodtls"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textStyle="normal" />
+
+
+                        <MultiAutoCompleteTextView
+                            android:id="@+id/multiauto_diagnosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:maxLength="256"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textCursorDrawable="@null" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/White" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/upper_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/google_cards_background_top"
+                            android:gravity="center|center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/weight_kg_new"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplt_weight"
+                                android:focusableInTouchMode="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey_200"
+
+                                android:completionThreshold="1"
+                                android:ems="10"
+                                android:inputType="numberDecimal"
+                                android:maxLength="5"
+                                android:padding="10dp"
+
+                                android:singleLine="true"
+                                android:text="0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/height_cms"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplt_height"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey_200"
+                                android:completionThreshold="1"
+                                android:inputType="numberDecimal"
+                                android:maxLength="5"
+                                android:focusableInTouchMode="false"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:text="0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/bmi"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplt_bmi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@color/grey_200"
+                                android:completionThreshold="1"
+                                android:ems="10"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:text="0" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/str_temp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplt_temperature"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey_200"
+                                android:completionThreshold="1"
+                                android:ems="10"
+                                android:inputType="number|numberDecimal"
+                                android:maxLength="5"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:text="97.8" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/blood_pressure_nsystolic"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplt_bps"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@color/grey_200"
+                                android:completionThreshold="1"
+                                android:ems="10"
+                                android:inputType="numberDecimal"
+                                android:maxLength="3"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:text="0" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/blood_pressure_ndiastolic"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplt_bpd"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey_200"
+                                android:completionThreshold="1"
+
+                                android:ems="10"
+
+                                android:inputType="numberDecimal"
+                                android:maxLength="3"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:text="0" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <!-- BLODD SUGAR DETAILS -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/fbs"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplt_fbs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey_200"
+                                android:completionThreshold="1"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:text="0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/ppbs"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplt_ppbs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey_200"
+                                android:completionThreshold="1"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:text="0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/rbs"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/ourcolour" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplt_rbs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey_200"
+                                android:completionThreshold="1"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:text="0" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <!-- All Systems *************************************************************  -->
+                <LinearLayout
+                    android:id="@+id/all_casenotes_layouts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"/>
+
+
+
+                <!-- Bar/Line chart -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/ourcolour"
+                        android:padding="5dp"
+                        android:text="@string/prev_med_history"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white" />
+
+                    <!-- Medicine History -->
+                    <LinearLayout
+                        android:id="@+id/contentLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/ourcolour"
+                        android:gravity="center|top"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/imgvw_bloodsugar_bar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/barchart_ic" />
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/imgvw_bloodsugar_line"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/linechart_ic" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/blood_sugar"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/ourcolourgrey"
+                                android:textColor="@color/ourcolourgrey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/imgvw_bloodpressure_bar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/barchart_ic" />
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/imgvw_bloodpressure_line"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/linechart_ic" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/blood_pressure"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/ourcolourgrey"
+                                android:textColor="@color/ourcolourgrey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/imgvw_bloodweight_bar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/barchart_ic" />
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/imgvw_bloodweight_line"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/linechart_ic" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/weight"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <!-- Bottom button layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/button_cancel"
+                style="@style/NegativeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/button_report_upload"
+                style="@style/PositiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="@string/report_upload"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button_submit"
+                style="@style/PositiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <!-- Footer Layout -->
+        <include
+            layout="@layout/common_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

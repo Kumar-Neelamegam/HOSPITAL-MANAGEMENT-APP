@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_breathsound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/is_breath_sound_equal"
+                android:textColor="@color/ourcolour" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_breathsoundequal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtn_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yes" />
+
+
+                <RadioButton
+                    android:id="@+id/rbtn_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No" />
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/radiogroup_breathsoundequal_optns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rrbtn_DecreaseonLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Decrease on Left" />
+
+
+                <RadioButton
+                    android:id="@+id/rrbtn_Decreaseonright"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Decrease on right" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_breath_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/breath_sound_txt"
+                android:textColor="@color/ourcolour" />
+
+            <Spinner
+                android:id="@+id/spinner_breath_sound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/abc_spinner_textfield_background_material"
+                android:padding="3dp"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_trachea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:text="@string/trachea"
+                android:textColor="@color/ourcolour" />
+
+            <Spinner
+                android:id="@+id/spinner2_trachea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/abc_spinner_textfield_background_material"
+                android:padding="3dp"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox_kyphosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                
+                android:padding="3dp"
+                android:text="@string/kyphosis" />
+
+            <CheckBox
+                android:id="@+id/checkBox_scoliosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                
+                android:padding="3dp"
+                android:text="@string/scoliosis" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_crepitation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/crepitation"
+                android:textColor="@color/ourcolour" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    
+                    android:padding="3dp"
+                    android:text="@string/txt_left" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    
+                    android:padding="3dp"
+                    android:text="@string/txt_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_rhonchi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/rhonchi"
+                android:textColor="@color/ourcolour" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox_rhonchi_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    
+                    android:padding="3dp"
+                    android:text="@string/txt_left" />
+
+                <CheckBox
+                    android:id="@+id/checkBox__rhonchi_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    
+                    android:padding="3dp"
+                    android:text="@string/txt_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView_shape_of_the_chest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:text="@string/shape_of_the_chest"
+                android:textColor="@color/ourcolour" />
+
+            <Spinner
+                android:id="@+id/spinner_shape_of_the_chest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/abc_spinner_textfield_background_material"
+                android:padding="3dp"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_respiratory_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/respiratory_rate"
+            android:textColor="@color/ourcolour" />
+
+        <EditText
+            android:id="@+id/editText_respiratory_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_300"
+            android:ems="10"
+            android:inputType="textImeMultiLine"
+            android:maxLength="256"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView_spo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/spo2"
+            android:textColor="@color/ourcolour" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_spo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_300"
+            android:ems="10"
+            android:padding="5dp" />
+
+    </LinearLayout>
+</merge>

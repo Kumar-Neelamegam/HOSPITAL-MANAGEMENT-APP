@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="70dip"
+                android:background="@drawable/toolbar_dropshadow"
+                android:padding="10dp"
+                app:layout_collapseMode="pin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/back_ic"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/txvw_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/agegen"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/search_patient_online"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/search_ico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_search" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+
+                //******************************************
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/RelativeLayout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/ourcolour"
+                        android:orientation="vertical">
+
+                        <!-- Header aligned to top -->
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/agegen"
+                            android:background="#3d5987"
+                            android:gravity="left|center_vertical"
+                            android:padding="5dp"
+                            android:text="@string/my_patients"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#FFFFFF"
+                            android:visibility="gone"
+                            tools:ignore="UnknownIdInLayout,HardcodedText" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/TextView04"
+                            android:background="#939598"
+                            android:scaleType="fitXY"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/footer"
+                            android:layout_below="@+id/top_layout2"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/txt_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/ourcolour"
+                                android:padding="5dp"
+                                android:text="-"
+                                android:textColor="#fff" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dip"
+                                android:background="#fff" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/list"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_above="@+id/footer"
+                                android:layout_below="@+id/top_layout2"
+                                android:background="@color/colorPrimary"
+                                android:layoutAnimation="@anim/layout_bottom_to_top_slide"
+                                android:scrollbars="vertical" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/getpatient"
+                style="@style/PositiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get selected patient details" />
+
+            <!-- Footer Layout -->
+            <include
+                layout="@layout/common_footer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        //******************************************
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

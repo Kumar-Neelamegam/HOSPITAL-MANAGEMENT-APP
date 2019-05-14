@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView_beat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/beat"
+                android:textColor="@color/ourcolour" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox_s1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+
+                    android:text="@string/s1" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_s2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+
+                    android:text="@string/s2" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_s3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/s3" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_s4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/s4" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView_murmur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/murmur"
+                android:textColor="@color/ourcolour" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/checkBox_systolic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/systolic" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_diastolic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/diastolic" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_others"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/others" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_pericardialrub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pericardial_rub"
+                    android:textColor="@color/ourcolour" />
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_pericardialrub"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/no"
+                    app:textOn="@string/yes" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_pulserate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pulse_rate"
+                    android:textColor="@color/ourcolour" />
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_pulserate"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/irregular"
+                    app:textOn="@string/regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView_heartrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:padding="5dp"
+                android:text="@string/heart_rate"
+                android:textColor="@color/ourcolour" />
+
+            <EditText
+                android:id="@+id/editText_heartrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/grey_300"
+                android:ems="10"
+                android:maxLength="256"
+                android:padding="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+</merge>

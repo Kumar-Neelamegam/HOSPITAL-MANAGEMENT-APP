@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/ourcolour"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/post_portum_care"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_AnyComplaints"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/any_complaints"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:background="@color/grey_300"
+                        android:id="@+id/edittext_Any_Complaints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_Pallor"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pallor"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:background="@color/grey_300"
+                        android:id="@+id/edittext_pallor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/textView_Pulse_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pulse_rate"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:background="@color/grey_300"
+                        android:id="@+id/edittext_pulse_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/textView_Bloodpressure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blood_pressure"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:background="@color/grey_300"
+                        android:id="@+id/edittext_Bloodpressure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:singleLine="true" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_Temperature"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_temperature"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:background="@color/grey_300"
+                        android:id="@+id/edittext_Temperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/textView_Breasts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="Breasts"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_breast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_breast1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Soft" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_breast2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Engorged" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_Nipples"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="Nipples"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_nipple"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_nipple1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cracked" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_nipple2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Normal" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_Uterus_Tenderness"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="Uterus Tenderness"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_uterus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_uterus1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Present" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_uterus2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Absent" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_BleedingPV"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="Bleeding P/V"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_bleed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_bleed1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Excessive" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_bleed2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Normal" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_Lochia"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="Lochia"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_lochia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_lochia1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Healthy" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_lochia2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Foul smelling" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_Episiotomy_Tear"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="Episiotomy/Tear"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_tear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_tear1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Healthy" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_tear2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Infected" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_Family_planning_counselling"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/family_planning_counselling"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:background="@color/grey_300"
+                        android:id="@+id/editText_Family_planning_counselling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_other_complications"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/any_other_complications_and_referral"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:background="@color/grey_300"
+                        android:id="@+id/edittext_other_complications"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+</merge>

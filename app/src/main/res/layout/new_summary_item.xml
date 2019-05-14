@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:id="@+id/tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/count_1"
+                    android:layout_width="120dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#3d5987"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text=" "
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#3d5987" />
+
+                <TextView
+                    android:id="@+id/count_2"
+                    android:layout_width="240dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Location Name"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#3d5987" />
+
+                <TextView
+                    android:id="@+id/count_3"
+                    android:layout_width="160dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="No Of Location"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#3d5987" />
+
+                <TextView
+                    android:id="@+id/count_4"
+                    android:layout_width="160dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="No Of Poles"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#3d5987" />
+
+                <TextView
+                    android:id="@+id/count_5"
+                    android:layout_width="185dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Pending demand note"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#3d5987" />
+
+                <TextView
+                    android:id="@+id/count_6"
+                    android:layout_width="160dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Pending permit"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#3d5987" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#3d5987" />
+
+
+</LinearLayout>

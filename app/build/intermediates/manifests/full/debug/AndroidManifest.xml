@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="displ.mobydocmarathi.com"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="27" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:requiresSmallestWidthDp="600"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="kdmc_kumar.Initialization.Initialization"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="kdmc_kumar.Doctor_Modules.Login"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="kdmc_kumar.Adapters_GetterSetter.DashboardAdapter.Dashboard_NavigationMenu"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Drug_Directory.Cims"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Drug_Directory.Cims_Display"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.ClinicalInformation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.Investigations"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.DoctorReferral"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.CaseNotes_Modules.CaseNotes"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.Patient_Registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.MedicinePrescription"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Doctor_Modules.ChangePassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.MyPatient"
+            android:label="@string/title_activity_my_patient"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Doctor_Modules.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Reports.ReportsActivity"
+            android:label="@string/title_activity_reports"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Reports.Report_daily_consulation"
+            android:label="@string/title_activity_report__dailyconsulation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Reports.Report_fee_collection"
+            android:label="@string/title_activity_report_fee_collection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Reports.Report_list_of_test_prescribed"
+            android:label="@string/title_activity_report__list_of_test_prescribed"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Reports.Report_list_of_medicine_prescribed"
+            android:label="@string/title_activity_report__list_of_medicine_prescribed"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Reports.Report_list_of_doctorreferral"
+            android:label="@string/title_activity_report__list_of_donor"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Reports.Report_newpatient_consulation"
+            android:label="@string/title_activity_report__list_of_newpatient"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.CaseNotes_Charts_new.Chart_Bar_BloodSugar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.CaseNotes_Charts_new.Chart_Bar_BloodPressure"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.CaseNotes_Charts_new.Chart_Bar_Weight"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.CaseNotes_Charts_new.Chart_Line_BloodPressure"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.CaseNotes_Charts_new.Chart_Line_Weight"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.CaseNotes_Charts_new.Chart_Line_BloodSugar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Charts.Chart_Bar_Inpatient"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Charts.Chart_Line_Inpatient"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Charts.Chart_Bar_DiabeticChart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Charts.Chart_Line_DiabeticChart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Charts.Chart_Bar_TemperatureChart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Charts.Chart_Line_TemperatureChart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Charts.Chart_Bar_InputChart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Charts.Chart_Line_InputChart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Charts.Chart_Bar_OutputChart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Charts.Chart_Line_OutputChart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Masters_Modules.templates_list"
+            android:label="@string/title_activity_templates_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Masters_Modules.templates_addnew"
+            android:label="@string/title_activity_templates_new"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Masters_Modules.Masters_New"
+            android:label="@string/title_activity_templates_new"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Utilities_Others.CropImage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Webservices_NodeJSON.Investigation_TestList.Investigation_ExpandableTestList"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.OnlineConsultation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.OnlineConsultation_Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.CloudData"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.AddDietActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_List"
+            android:label="Inpatient"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Detailed_View"
+            android:label="@string/title_activity_inpatient__display"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Adapters_GetterSetter.DietAdapter"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Doctor_Modules.Splash_Screen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.OperationTheater"
+            android:label="Operation Theater"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.OperationReport"
+            android:label="Operation Theater"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.MyPatient_Module.MyPatientDrawer"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.PatientTestResult"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Doctor_Modules.Doctor_Profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.MyPatient_Module.OperationListSummary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Inpatient_Module.Inpatient_Inputs"
+            android:label="@string/title_inpatient"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.ReportFileUpload.UploadDocument"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Notification.NotificationActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Doctor_Modules.PinPassword"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.MyPatient_Module.ExtraReports.Profile_Blood_Report"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.MyPatient_Module.ExtraReports.Profile_StoolReport"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.MyPatient_Module.ExtraReports.Profile_UrineReport"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.MyPatient_Module.ExtraReports.Profile_ANCTestReport"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.MyPatient_Module.ExtraReports.Profile_HIV_Report"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="kdmc_kumar.Core_Modules.SearchOnlinePatient"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="displ.mobydocmarathi.com.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.mlsdev.rximagepicker.HiddenActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+            android:theme="@style/Theme.Transparent" />
+        <!--
+             <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        -->
+        <receiver
+            android:name="com.magnet.android.mms.async.constraint.NetworkStateReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.magnet.android.action.NO_ASYNC_PENDING_REQUESTS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.magnet.android.mms.async.AsyncIntentService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.magnet.android.action.RUN_ASYNC" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

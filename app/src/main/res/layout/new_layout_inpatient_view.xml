@@ -1,0 +1,52 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/inpatient_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/common_toolbar_with_two_action_button" />
+
+        <ImageView
+            android:id="@+id/inpatient_imgvw_patient_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_user_avatar" />
+
+
+        <WebView
+            android:id="@+id/inpatient_webvw_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include layout="@layout/common_footer_layout" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/inpatient_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabCustomSize="60dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_list_menu_option" />
+
+
+</android.support.design.widget.CoordinatorLayout>

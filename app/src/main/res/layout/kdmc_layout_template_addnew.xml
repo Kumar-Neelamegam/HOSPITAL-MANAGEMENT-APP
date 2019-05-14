@@ -1,0 +1,574 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="70dip"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                app:layout_collapseMode="pin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        app:srcCompat="@drawable/back_ic"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/txvw_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/agegen"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/prescription_template_customization"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/home_ic" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_close" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mypatient_card"
+                    android:layout_marginLeft="@dimen/mypatient_card"
+                    android:layout_marginRight="@dimen/mypatient_card"
+                    android:layout_marginTop="@dimen/mypatient_card"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+
+                <LinearLayout
+                    android:id="@+id/RelativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/relativeLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|right"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/amt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/template_no"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:text="@string/_0"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/relativeLayout4"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="10dip">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/TextView001"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/template_name"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autoCompleteTextView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textCapCharacters"
+                                android:singleLine="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/TextView002"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/medicine_name"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autoCompleteTextView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPostalAddress"
+                                android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/relativeLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/linearLayout2"
+                        android:layout_weight="1"
+                        android:padding="10dip">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:id="@+id/TextView003"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="80dp"
+                                android:text="@string/lblfreq"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="onChecked"
+                                android:text="@string/all" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/checkBox1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:onClick="onChecked"
+                                        android:text="@string/morning" />
+
+                                    <EditText
+                                        android:id="@+id/editText3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:enabled="false"
+                                        android:inputType="number|numberDecimal"
+                                        android:maxLength="3"
+                                        android:singleLine="true"
+                                        android:text="1">
+
+                                        <requestFocus />
+                                    </EditText>
+
+                                    <Spinner
+                                        android:id="@+id/syrup1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:enabled="false"
+                                        android:entries="@array/syrup_measure"
+                                        android:gravity="center"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/checkBox2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:onClick="onChecked"
+                                        android:text="@string/afternoon" />
+
+                                    <EditText
+                                        android:id="@+id/EditText01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:enabled="false"
+                                        android:inputType="number|numberDecimal"
+                                        android:maxLength="3"
+                                        android:singleLine="true"
+                                        android:text="1" />
+
+                                    <Spinner
+                                        android:id="@+id/syrup2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:enabled="false"
+                                        android:entries="@array/syrup_measure"
+                                        android:gravity="center"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/checkBox3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:onClick="onChecked"
+                                        android:text="@string/evening" />
+
+                                    <EditText
+                                        android:id="@+id/EditText02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:enabled="false"
+                                        android:inputType="number|numberDecimal"
+                                        android:maxLength="3"
+                                        android:singleLine="true"
+                                        android:text="1" />
+
+                                    <Spinner
+                                        android:id="@+id/syrup3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:enabled="false"
+                                        android:entries="@array/syrup_measure"
+                                        android:gravity="center"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/checkBox4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:onClick="onChecked"
+                                        android:text="@string/night" />
+
+                                    <EditText
+                                        android:id="@+id/EditText03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:enabled="false"
+                                        android:inputType="number|numberDecimal"
+                                        android:maxLength="3"
+                                        android:singleLine="true"
+                                        android:text="1" />
+
+                                    <Spinner
+                                        android:id="@+id/syrup4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:enabled="false"
+                                        android:entries="@array/syrup_measure"
+                                        android:gravity="center"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/relativeLayout3"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dip">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/intake"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <LinearLayout
+                                    android:id="@+id/option_frequency"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:padding="5dp">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="true"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="@string/after_food" />
+
+                                    <RadioButton
+                                        android:id="@+id/RadioButton01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="@string/before_food" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="@string/with_food" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/duration"
+                                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                    <Spinner
+                                        android:id="@+id/spinner1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <Button
+                                android:id="@+id/Add"
+                                style="@style/PositiveButton"
+                                android:layout_gravity="right"
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_drug"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyler_view"
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <ListView
+                            android:id="@+id/list"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:divider="#939598"
+                            android:dividerHeight="3dp"
+                            android:listSelector="@drawable/list_selector"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/Button02"
+                style="@style/PositiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/Button01"
+                style="@style/PositiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_templates"
+                android:layout_weight="1"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <!-- Footer Layout -->
+        <include
+            layout="@layout/common_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

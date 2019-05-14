@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView_anaemic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anaemic"
+                    android:textColor="@color/ourcolour"
+                    android:textStyle="normal" />
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_anaemic"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/no"
+                    app:textOn="@string/yes" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/TextView_icterus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icterus"
+                    android:textColor="@color/ourcolour"
+                    android:textStyle="normal" />
+
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_icterus"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/no"
+                    app:textOn="@string/yes" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/TextView_cyanosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cyanosis"
+                    android:textColor="@color/ourcolour"
+                    android:textStyle="normal" />
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_cyanosis"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/no"
+                    app:textOn="@string/yes" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView_clubbing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clubbing"
+                    android:textColor="@color/ourcolour"
+                    android:textStyle="normal" />
+
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_clubbing"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/no"
+                    app:textOn="@string/yes" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView_lymphadenopathy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lymphadenopathy"
+                    android:textColor="@color/ourcolour"
+                    android:textStyle="normal" />
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_lymphadenopathy"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/no"
+                    app:textOn="@string/yes" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView_varicose_veins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/varicose_veins"
+                    android:textColor="@color/ourcolour"
+                    android:textStyle="normal" />
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_varicose_veins"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/no"
+                    app:textOn="@string/yes" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView_pedal_edema"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_pedal_edema"
+                    android:textColor="@color/ourcolour"
+                    android:textStyle="normal" />
+
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_pedal_edema"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/no"
+                    app:textOn="@string/yes" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textview_skininfection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skin Infection"
+                    android:textColor="@color/ourcolour"
+                    android:textStyle="normal" />
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_skininfection"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/no"
+                    app:textOn="@string/yes" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView_ShortStatured"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Short Statured"
+                    android:textColor="@color/ourcolour"
+                    android:textStyle="normal" />
+
+
+                <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                    android:id="@+id/switch_ShortStatured"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    app:colorBorder="@color/colorPrimary"
+                    app:colorOn="@color/colorPrimary"
+                    app:on="false"
+                    app:textOff="@string/no"
+                    app:textOn="@string/yes" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_Built"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/built"
+            android:textColor="#003f72"
+            android:textStyle="normal" />
+
+
+        <RadioGroup
+            android:id="@+id/radiogroup_built"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_lean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+              
+                android:text="@string/lean" />
+
+            <RadioButton
+                android:id="@+id/radioButton_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+              
+                android:text="@string/txt_normal" />
+
+            <RadioButton
+                android:id="@+id/radioButton_obese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+              
+                android:text="@string/obese" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <CheckBox
+                android:id="@+id/checkBox_pallorness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                
+                android:text="@string/pallorness" />
+
+            <CheckBox
+                android:id="@+id/checkBox_thyroid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                
+                android:text="@string/thyroid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <CheckBox
+                android:id="@+id/checkBox_face_puffiness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                
+                android:text="@string/face_puffiness" />
+
+            <CheckBox
+                android:id="@+id/checkBox_jaundice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                
+                android:text="@string/jaundice" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

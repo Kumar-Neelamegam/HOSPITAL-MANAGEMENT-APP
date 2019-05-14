@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Dental System ************************************************************* -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginLeft="@dimen/spacing_middle"
+        android:layout_marginRight="@dimen/spacing_middle"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center_vertical"
+                android:minHeight="?android:attr/actionBarSize"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dental_system"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/arrow_dental_system"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/ic_expand_arrow" />
+
+            </LinearLayout>
+
+            <!-- primary layout-->
+            <LinearLayout
+                android:id="@+id/primary_dental_system_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include
+                    layout="@layout/dental_layout_adult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    layout="@layout/dental_layout_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_10" />
+
+                <Button
+                    android:id="@+id/hide_dentalinfo"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="@string/hide" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_dysuria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:text="@string/dysuria"
+                        android:textColor="@color/ourcolour" />
+
+                    <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                        android:id="@+id/switch_dysuria1"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:textSize="12sp"
+                        app:colorBorder="@color/colorPrimary"
+                        app:colorOn="@color/colorPrimary"
+                        app:on="false"
+                        app:textOff="@string/no"
+                        app:textOn="@string/yes" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_pyuria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:text="@string/pyuria"
+                        android:textColor="@color/ourcolour" />
+
+                    <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                        android:id="@+id/switch_pyuria1"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:textSize="12sp"
+                        app:colorBorder="@color/colorPrimary"
+                        app:colorOn="@color/colorPrimary"
+                        app:on="false"
+                        app:textOff="@string/no"
+                        app:textOn="@string/yes" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_oliguria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oliguria"
+                        android:textColor="@color/ourcolour" />
+
+                    <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                        android:id="@+id/switch_oliguria1"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:textSize="12sp"
+                        app:colorBorder="@color/colorPrimary"
+                        app:colorOn="@color/colorPrimary"
+                        app:on="false"
+                        app:textOff="@string/no"
+                        app:textOn="@string/yes" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_polyuria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/polyuria"
+                        android:textColor="@color/ourcolour" />
+
+                    <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                        android:id="@+id/switch_polyuria1"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:textSize="12sp"
+                        app:colorBorder="@color/colorPrimary"
+                        app:colorOn="@color/colorPrimary"
+                        app:on="false"
+                        app:textOff="@string/no"
+                        app:textOn="@string/yes" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_anuria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/anuria"
+                        android:textColor="@color/ourcolour" />
+
+                    <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                        android:id="@+id/switch_anuria1"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:textSize="12sp"
+                        app:colorBorder="@color/colorPrimary"
+                        app:colorOn="@color/colorPrimary"
+                        app:on="false"
+                        app:textOff="@string/no"
+                        app:textOn="@string/yes" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_nocturia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nocturia"
+                        android:textColor="@color/ourcolour" />
+
+                    <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                        android:id="@+id/switch_nocturia1"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:textSize="12sp"
+                        app:colorBorder="@color/colorPrimary"
+                        app:colorOn="@color/colorPrimary"
+                        app:on="false"
+                        app:textOff="@string/no"
+                        app:textOn="@string/yes" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_urethral_discharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/urethral_discharge"
+                        android:textColor="@color/ourcolour" />
+
+                    <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                        android:id="@+id/switch_urethraldischarge1"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:textSize="12sp"
+                        app:colorBorder="@color/colorPrimary"
+                        app:colorOn="@color/colorPrimary"
+                        app:on="false"
+                        app:textOff="@string/no"
+                        app:textOn="@string/yes" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_prostate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/prostate"
+                        android:textColor="@color/ourcolour" />
+
+                    <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                        android:id="@+id/switch_prostate"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp"
+                        android:textSize="12sp"
+                        app:colorBorder="@color/colorPrimary"
+                        app:colorOn="@color/colorPrimary"
+                        app:on="false"
+                        app:textOff="@string/txt_enlarged"
+                        app:textOn="@string/txt_normal" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_haematuria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/haematuria"
+                android:textColor="@color/ourcolour" />
+
+            <Spinner
+                android:id="@+id/spinner_haematuria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/abc_spinner_textfield_background_material"
+                android:padding="3dp"
+                android:spinnerMode="dialog" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</merge>

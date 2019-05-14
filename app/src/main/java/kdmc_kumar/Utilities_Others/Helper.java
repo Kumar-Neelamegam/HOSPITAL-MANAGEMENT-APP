@@ -1,0 +1,50 @@
+/*
+* Helper.java,  Mobydoctor-LiveCode
+* Author: AndroidGeek
+* Developer name: N.Muthukumar
+* Email: muthukumar.n@devatechinfosystems.com
+* Created on: May 23, 2016 1:15:08 PM
+*/
+package kdmc_kumar.Utilities_Others;
+
+import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
+/*
+* Helper.java,  Mobydoctor-LiveCode
+* Author: AndroidGeek
+* Developer name: N.Muthukumar
+* Email: muthukumar.n@devatechinfosystems.com
+* Created on: May 23, 2016 1:15:08 PM
+*/
+public class Helper {
+
+    public Helper() {
+    }
+
+    public static void getListViewSize(ListView myListView) {
+        ListAdapter myListAdapter = myListView.getAdapter();
+        if (myListAdapter == null) {
+            //do nothing return null
+            return;
+        }
+        //set listAdapter in loop for getting final size
+        int totalHeight = 0;
+        for (int size = 0; size < myListAdapter.getCount(); size++) {
+            View listItem = myListAdapter.getView(size, null, myListView);
+            listItem.measure(0, 0);
+            totalHeight += listItem.getMeasuredHeight();
+        }
+        //setting listview item in adapter
+        LayoutParams params = myListView.getLayoutParams();
+        params.height = totalHeight + (myListView.getDividerHeight() * (myListAdapter.getCount() - 1) + 100);
+        myListView.setLayoutParams(params);
+        // print height of adapter on log
+        Log.i("height of listItem:", String.valueOf(totalHeight));
+    }
+
+}

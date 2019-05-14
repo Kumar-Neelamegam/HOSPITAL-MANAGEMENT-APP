@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="Doctors App"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/grey_200"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtvw_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text="Initializing..."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvw_pleasewait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text="Please wait a moment"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_go"
+            style="@style/PositiveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Go"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ProgressBar
+
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+    <!-- Footer Layout -->
+    <include
+        layout="@layout/common_footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

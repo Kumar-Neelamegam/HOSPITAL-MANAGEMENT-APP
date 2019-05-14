@@ -1,0 +1,58 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_dropshadow"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            layout_collapseMode="pin"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/toolbar_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/back_ic" />
+
+                <TextView
+                    style="@style/TextView_HeadingTitle"
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/title"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/toolbar_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    app:srcCompat="@drawable/ic_close" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

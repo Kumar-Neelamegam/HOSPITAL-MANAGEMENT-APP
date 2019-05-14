@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/ourcolour"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/care_of_baby"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/urine_passed"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:id="@+id/edt_urine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stool_passed"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:id="@+id/edt_stool"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:singleLine="true" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diarrhea"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:id="@+id/edt_diarrhea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vomiting"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:id="@+id/edt_vomit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/convulsions"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:id="@+id/edt_conv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/activity"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_activity1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Good" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_activity2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Lethargic" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/sucking"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_sucking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_sucking1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Good" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_sucking2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Poor" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/breathing"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_breathing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_breathing1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fast" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_breathing2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Difficult" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/chest_indrawing"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_chest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_chest1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Present" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_chest2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Absent" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_temper"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_temperature"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:id="@+id/edittext_temper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_Jaundice"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jaundice"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:id="@+id/edittext_jaundice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_stump"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/condition_of_umbilical_stump"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:id="@+id/edittext_stump"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:singleLine="true" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView_Skin"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/skin_pustules"
+                        android:textColor="@color/ourcolour" />
+
+                    <RadioGroup
+                        android:id="@+id/rad_grp_skin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_skin1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Present" />
+
+                        <RadioButton
+                            android:id="@+id/rad_btn_skin2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Absent" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_Any_other_complications"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/any_other_complications"
+                        android:textColor="@color/ourcolour" />
+
+                    <EditText
+                        android:padding="5dp"
+                        android:id="@+id/edittext__Any_other_complications"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+</merge>

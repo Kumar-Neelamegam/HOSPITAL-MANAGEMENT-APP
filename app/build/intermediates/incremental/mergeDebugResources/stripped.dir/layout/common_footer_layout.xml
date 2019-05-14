@@ -1,0 +1,22 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#fff" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="@string/txt_footer"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+
+</merge>
+

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kdmc_kumar.MyPatient_Module.OperationListSummary">
+
+    <TextView
+        android:id="@+id/patientname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="@string/operation_details"
+        android:textColor="#fff" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="120dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#3d5987"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="Sl.No"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="240dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#3d5987"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="@string/doctor_name"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#3d5987"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="@string/operation_notes"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#3d5987"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="@string/position"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="185dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#3d5987"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="@string/operation_procedure"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#3d5987"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="@string/pst_diagnosis"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#3d5987"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="@string/post_operative_instruction_txt"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#3d5987"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="@string/closure"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#3d5987"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="@string/pre_operation_diagnosis"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#3d5987"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="@string/remarks"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="2dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyler_view_dignosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#fff"
+                    android:scrollbars="none"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

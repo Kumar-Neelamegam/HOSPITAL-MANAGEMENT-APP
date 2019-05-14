@@ -1,0 +1,72 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.2.30'
+
+  /*  ext.buildToolsVersion = '28.0.0 rc1' //String
+    ext.minSdkVersion = 16 //Integer
+    ext.targetSdkVersion = 27
+    ext.compileSdkVersion = 'android-P'
+    ext.supportLibraryVersion = '28.0.0-alpha1'
+*/
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:3.1.3'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.8.1'
+    }
+    repositories {
+        google()
+        jcenter()
+    }
+
+
+}
+apply plugin: 'kotlin'
+
+allprojects {
+    repositories {
+
+        maven { url 'https://jitpack.io' }
+        maven {                                  // <-- Add this
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven {
+            url "http://repo.magnet.com:8081/artifactory/public/"
+        }
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+        google()
+    }
+
+
+}
+
+
+
+
+/*
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}*/
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+
+

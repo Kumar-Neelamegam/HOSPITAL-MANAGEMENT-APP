@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nameagegen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.33"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#3d5987"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/amt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_weight="0.33"
+        android:gravity="center"
+        android:text="@string/patient_photo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#3d5987"
+        android:textStyle="bold" />
+
+    <ZoomControls
+        android:id="@+id/zoomControls1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zoomControls1"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/rotate_anticlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/camera_rotateleft_select_button"
+            android:paddingRight="5dp" />
+
+        <ImageButton
+            android:id="@+id/rotate_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/camera_rotatereset_select_button"
+            android:paddingRight="5dp" />
+
+        <ImageButton
+            android:id="@+id/rotate_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/camera_rotateright_select_button"
+            android:paddingRight="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout8"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/amt"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.23">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageZoom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.23"
+                app:srcCompat="@null" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

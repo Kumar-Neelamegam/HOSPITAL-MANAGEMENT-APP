@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/serialno"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#c3c3c3"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="afda"
+            android:textColor="#535353"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="afda"
+            android:textColor="#535353"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:layout_alignParentRight="true"
+            android:background="#308705"
+            android:gravity="center"
+            android:text="87"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+</LinearLayout>

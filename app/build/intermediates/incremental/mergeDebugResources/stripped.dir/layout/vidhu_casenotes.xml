@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_pog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="POG(Weeks)"
+                android:textColor="@color/ourcolour" />
+
+            <EditText
+                android:id="@+id/edt_pog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_pallor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Pallor"
+                android:textColor="@color/ourcolour" />
+
+            <EditText
+                android:id="@+id/edt_pallor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_oedema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Oedema"
+                android:textColor="@color/ourcolour" />
+
+            <EditText
+                android:id="@+id/edt_oedema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_fundalHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Fundal height (Weeks/cm)"
+                android:textColor="@color/ourcolour" />
+
+            <EditText
+                android:id="@+id/edt_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_LiePresentation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Lie/Presentation"
+                android:textColor="@color/ourcolour" />
+
+            <EditText
+                android:id="@+id/edt_LiePresentation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_Fetalmovements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Fetal movements"
+                android:textColor="@color/ourcolour" />
+
+            <EditText
+                android:id="@+id/edt_Fetalmovements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_Fetalheartrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Fetal heart rate (Per Minute)"
+                android:textColor="@color/ourcolour" />
+
+            <EditText
+                android:id="@+id/edt_Fetalheartrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_pv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="P/V if done"
+                android:textColor="@color/ourcolour" />
+
+            <EditText
+                android:id="@+id/edt_pv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_anycomplaints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Any complaints"
+                android:textColor="@color/ourcolour" />
+
+            <EditText
+                android:id="@+id/edt_anycomplaints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</merge>

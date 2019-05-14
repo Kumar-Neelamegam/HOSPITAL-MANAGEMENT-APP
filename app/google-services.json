@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "737021440068",
+    "firebase_url": "https://mobydoctor-75dfc.firebaseio.com",
+    "project_id": "mobydoctor-75dfc",
+    "storage_bucket": "mobydoctor-75dfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737021440068:android:e8402ba3e3133ddb",
+        "android_client_info": {
+          "package_name": "displ.mobydocmarathi.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737021440068-5i41sqn2dqkrn1lgnp8tgo30b5s0l0bg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "displ.mobydocmarathi.com",
+            "certificate_hash": "3639476bc8f87cb35a81ba9f330ddd4bab05ff31"
+          }
+        },
+        {
+          "client_id": "737021440068-jsm4mrkknime1ena8nkt2s48h98bv8n0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5Xe6_YUxhSU3xjm6B2uDlEW8mthfQvfo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737021440068-jsm4mrkknime1ena8nkt2s48h98bv8n0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

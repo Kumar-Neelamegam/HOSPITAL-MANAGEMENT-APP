@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <include layout="@layout/content_add_diet" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/calories_per_day"
+                android:textColor="#666666"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/calories_total_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="100"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_btns"
+                style="@style/NegativeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textColor="#ffffff" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="1dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/submit_datas"
+                style="@style/PositiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

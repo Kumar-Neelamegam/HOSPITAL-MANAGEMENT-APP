@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Android\\Desktop\\MOBYDOCTOR 2018\\KDMC_2018\\KDMC\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d09e1048ab2f5be2066eff27b7bfa742\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,169,238,308,382,458,517,588",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "164,233,303,377,453,512,583,651"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\2081798e591cf59af9d6560d6177dca6\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,550,614,677",
+                        "endLines": "2,3,4,5,6,7,8,9,10,14",
+                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
+                        "endOffsets": "110,180,251,323,381,439,545,609,672,854"
+                    },
+                    "to": {
+                        "startLines": "12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "809,869,939,1010,1082,1140,1198,1304,1368,1431",
+                        "endLines": "12,13,14,15,16,17,18,19,20,24",
+                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
+                        "endOffsets": "864,934,1005,1077,1135,1193,1299,1363,1426,1608"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Android\\Desktop\\MOBYDOCTOR 2018\\KDMC_2018\\KDMC\\app\\src\\main\\res\\values-sw600dp\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "104,180",
+                        "endColumns": "74,81",
+                        "endOffsets": "174,257"
+                    },
+                    "to": {
+                        "startLines": "10,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "656,729",
+                        "endColumns": "72,79",
+                        "endOffsets": "724,804"
+                    }
+                }
+            ]
+        }
+    ]
+}

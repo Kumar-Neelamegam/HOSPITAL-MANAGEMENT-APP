@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setttings_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100"
+        android:orientation="vertical">
+
+        <!-- Tool bar layout -->
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/toolbar_dropshadow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/back_ic" />
+
+                    <TextView
+                        android:id="@+id/txvw_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/title"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_changepassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/ic_chng_pwd" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/ic_close" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <!-- Scroll layout -->
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/settings_nesetedscroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/todo"
+                        android:tint="@color/colorPrimary"
+                        app:srcCompat="@drawable/ic_perm_device_information_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/check_app_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAllCaps="true"
+                        android:padding="10dp"
+                        android:text="@string/check_update"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:tint="@color/orange_A700"
+                            app:srcCompat="@drawable/ic_text_fields_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/set_language"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/choose_language"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+
+                            <RadioGroup
+                                android:id="@+id/language_radio"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/englishCheck"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:text="@string/english" />
+
+                                <RadioButton
+                                    android:id="@+id/marathiCheck"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/marathi" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                <!-- CARD LAYOUT 1 -->
+                <LinearLayout
+                    android:id="@+id/settings_cardlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/todo"
+                        android:tint="@color/pink_A700"
+                        app:srcCompat="@drawable/ic_lock_black_24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/login_pin"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/settings_chkbx_pinnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="@string/would_you_like_to_login_using_a_pin_number"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/settings_edtxt_pinnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:background="@color/grey_300"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="@string/enter_4_digit_pin"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:padding="10dp"
+                            android:password="true"
+                            android:singleLine="true">
+
+                            <requestFocus />
+                        </EditText>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!-- CARD LAYOUT 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/enable_casenote_system"
+                        android:tint="@color/light_blue_A700" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/enable_casenote_systems"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_generalexamination"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:padding="5dp"
+                                android:text="@string/general_examination" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_cardio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/cardio_vascular_system" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_respiratory"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/respiratory_system" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_gastrointestinal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/gastrointestinal_system" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_neurology"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/neurology_system" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_locomotor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/locomotor_system" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_renal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/renal_system" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_endocrine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/endocrine_system" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_clinical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:padding="5dp"
+                                android:text="@string/clinical_informaiton" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_postnatal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/pnc_system" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_dental"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/dental_system" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_casenotes_other"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:padding="5dp"
+                                android:text="@string/other_systems" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!-- CARD LAYOUT 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/consultation_timing"
+                        android:tint="@color/green_A700" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/consult_timing"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/settings_txtvw_workingdays"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/select_working_days"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/button_add"
+                                style="@style/PositiveButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical|clip_horizontal"
+                                android:padding="5dp"
+                                android:text="@string/add"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/editText_workingdays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/grey_300"
+                            android:ems="20"
+                            android:enabled="false"
+                            android:padding="10dp"
+                            android:textColor="#000000"
+                            android:textStyle="normal"
+                            android:inputType="text" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:padding="5dp"
+                            android:text="@string/morning"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/textview_mrngtime_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/grey_300"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textColor="#000000"
+                            android:textStyle="normal" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/evening"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edittext_evengtime_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/grey_300"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textColor="#000000"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/do_you_wish_to_enable_prior_appointments"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+                            <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                                android:id="@+id/switch_appointments"
+                                android:layout_width="82dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:padding="10dp"
+                                android:textOff="@string/txt_no"
+                                android:textOn="@string/txt_yes"
+                                app:colorBorder="@color/colorPrimary"
+                                app:colorOn="@color/colorPrimary"
+                                app:on="false" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layout_appointment_noofpatients"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="@string/no_of_patients_per_slot_30minutes"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editText_slot"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/grey_300"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:text="@string/_5" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!-- CARD LAYOUT 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/appointment_sms_and_update"
+                        android:tint="@color/deep_orange_A700" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/appointment_sms_and_updates"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/do_you_wish_to_receive_daily_appointment_schedule_via_sms"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+
+                            <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                                android:id="@+id/switch_DailyAppointmentSMS"
+                                android:layout_width="82dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:padding="10dp"
+                                android:textOff="@string/txt_no"
+                                android:textOn="@string/txt_yes"
+                                android:textSize="12sp"
+                                app:colorBorder="@color/colorPrimary"
+                                app:colorOn="@color/colorPrimary"
+                                app:on="false" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/would_you_like_to_keep_track_of_your_referrals_relating_to_pharmacy_and_labs"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+
+                            <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+
+                                android:id="@+id/Switch_ReferralPharmacy"
+                                android:layout_width="82dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:padding="10dp"
+                                android:textOff="@string/txt_no"
+                                android:textOn="@string/txt_yes"
+                                android:textSize="12sp"
+                                app:colorBorder="@color/colorPrimary"
+                                app:colorOn="@color/colorPrimary"
+                                app:on="false" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="@string/check_app_updates_automatically"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+
+                            <kdmc_kumar.Utilities_Others.toggle.LabeledSwitch
+                                android:id="@+id/Switch_Checkupdate"
+                                android:layout_width="82dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:padding="10dp"
+                                android:textOff="@string/txt_no"
+                                android:textOn="@string/txt_yes"
+                                android:textSize="12sp"
+                                app:colorBorder="@color/colorPrimary"
+                                app:colorOn="@color/colorPrimary"
+                                app:on="false" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- CARD LAYOUT 5 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/preferred_pharmacy_and_diagosis_center" />
+
+                    <TextView
+                        android:id="@+id/textView_preferredpharmacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/preferred_pharmacy_and_diagnosis_center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textvw_pharmacydetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:padding="5dp"
+                            android:text="@string/please_list_out_your_preferred_pharmacy"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autocomplete_prefpharmacy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey_300"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:hint="@string/pharmacy_name"
+                            android:padding="10dp"
+                            android:text="" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/prefpharmacy_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey_300"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:hint="@string/pharmacy_address"
+                            android:inputType="textMultiLine"
+                            android:maxLength="256"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="#000000" />
+
+
+                        <TextView
+                            android:id="@+id/textvw_laboratorydetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="@string/please_list_out_your_preferred_diagnostic_centre"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+
+                        <AutoCompleteTextView
+                            android:id="@+id/pref_labs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey_300"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:hint="@string/diagnostic_centre_name"
+                            android:padding="10dp"
+                            android:text="" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autocomplete_pref_labs_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey_300"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:hint="@string/diagnostic_centre_address"
+                            android:inputType="textMultiLine|textPostalAddress"
+                            android:maxLength="256"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="#000000" />
+
+                        <TextView android:layout_width="match_parent"
+                            android:text="-"
+                            android:id="@+id/server_info"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="@string/letter_head_space"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/edittext_letter_space_head"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey_300"
+                            android:cursorVisible="true"
+                            android:drawableBottom="@android:color/transparent"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:text="@string/_5"
+                            android:visibility="gone" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp" />
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <!-- Bottom Button Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <Button
+                android:id="@+id/button_cancel"
+                style="@style/NegativeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/cancel"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button_submit"
+                style="@style/PositiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+        <!-- Footer Layout -->
+        <include
+            layout="@layout/common_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

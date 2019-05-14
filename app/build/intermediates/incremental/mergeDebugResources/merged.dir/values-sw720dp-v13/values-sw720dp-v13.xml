@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <dimen name="design_fab_image_size" ns1:override="true">80dp</dimen>
+    <dimen name="design_fab_image_size_others" ns1:override="true">70dp</dimen>
+</resources>

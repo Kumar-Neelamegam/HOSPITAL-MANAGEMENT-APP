@@ -1,0 +1,377 @@
+﻿
+@font-face
+{
+
+src: url("../fonts/marathi.ttf")
+}
+ 
+
+@media all and (max-width: 1000px) and (min-width: 100px){
+
+
+.h2 {
+background: #d4118c;
+display: inline-block;
+
+line-height: 1.5;
+padding: 14px 30px;
+font-size: 24px;
+text-transform: uppercase;
+position: relative;
+margin: 10px auto;
+color: #fff;
+font-weight: bold;
+}
+
+.sub {
+font-weight: bold;
+font-size: 20px;
+color: white;
+display: inline-block;
+background-color: #c7007f;
+text-transform: uppercase;
+
+padding:15px 10px;
+/*white-space: nowrap;*/
+}
+
+body  {
+
+font-style: normal;
+font-size: 24px;
+font-weight: normal;
+line-height: 1.0;
+margin-left: 10px;
+margin-right: 10px;
+text-align: justify;
+}
+
+.h5 {
+font-style: italic;
+text-align: center;
+}
+
+.h6 {
+margin-top: -3px !important;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+}
+.align {
+text-align: center;
+font-weight: bold;
+/*font-weight: normal;*/
+font-family: MyFont2;
+}
+
+.story {
+
+font-weight: bold;
+font-size: 18px;
+font-style: italic;
+color: black;
+}
+
+.question {
+
+font-weight: bold;
+font-size: 18px;
+color: darkblue;
+}
+
+.videowrapper {
+float: none;
+clear: both;
+width: 70%;
+position: relative;
+padding-bottom: 35.25%;
+padding-top: 35px;
+height: 0;
+display: block;
+margin: 0 auto;
+}
+
+.videowrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+img {
+width: 100%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+line-height: 0.1;
+display: block;
+}
+}
+
+
+
+@media all and (max-width: 640px) and (min-width: 100px){
+
+
+@font-face
+{
+
+src: url("../fonts/marathi.ttf")
+}
+
+@font-face
+{
+font-family: MyFont2;
+src: url("../fonts/english.ttf")
+}
+
+.h2 {
+background: #d4118c;
+display: inline-block;
+
+line-height: 1.5;
+padding: 14px 30px;
+font-size: 18px;
+text-transform: uppercase;
+position: relative;
+margin: 10px auto;
+color: #fff;
+font-weight: bold;
+}
+
+.sub {
+font-weight: bold;
+font-size: 16px;
+color: white;
+display: inline-block;
+background-color: #c7007f;
+text-transform: uppercase;
+
+padding:15px 10px;
+/*white-space: nowrap;*/
+}
+
+body  {
+
+font-style: normal;
+font-size: 18px;
+font-weight: normal;
+line-height: 1.0;
+margin-left: 10px;
+margin-right: 10px;
+text-align: justify;
+}
+
+.h5 {
+font-style: italic;
+text-align: center;
+}
+
+.h6 {
+margin-top: -3px !important;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+}
+.align {
+text-align: center;
+font-weight: bold;
+/*font-weight: normal;*/
+font-family: MyFont2;
+}
+
+.story {
+
+font-weight: bold;
+font-size: 14px;
+font-style: italic;
+color: black;
+}
+
+.question {
+
+font-weight: bold;
+font-size: 14px;
+color: darkblue;
+}
+
+.videowrapper {
+float: none;
+clear: both;
+width: 70%;
+position: relative;
+padding-bottom: 35.25%;
+padding-top: 35px;
+height: 0;
+display: block;
+margin: 0 auto;
+}
+
+.videowrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+img {
+width: 100%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+line-height: 0.1;
+display: block;
+}
+}
+
+
+
+
+@media all and (min-width: 1151px) and (min-width: 700px)  {
+body  {
+font-style: normal;
+
+font-size: 18px;
+font-weight: normal;
+line-height: 1.0;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+
+@font-face
+{
+
+src: url("../fonts/marathi.ttf")
+}
+
+@font-face
+{
+font-family: MyFont2;
+src: url("../fonts/english.ttf")
+}
+
+
+.story {
+
+font-weight: bold;
+font-size: 18px;
+font-style: italic;
+color: black;
+}
+
+.question {
+
+font-weight: bold;
+font-size: 18px;
+color: darkblue;
+}
+
+/*.h2 {
+background: #c7007f;
+color: white;
+text-align: center;
+
+display: inline-block;
+margin: 10px auto;
+font-size: 30px;
+display: inline-block;
+/*white-space: nowrap;*/
+/*}*/
+
+.sub {
+font-weight: bold;
+font-size: 18px;
+color: white;
+display: inline-block;
+background-color: #c7007f;
+text-transform: uppercase;
+
+padding:15px 10px;
+/*white-space: nowrap;*/
+}
+
+
+/*.h2 {
+background: #c7007f;
+color: white;
+text-align: center;
+
+display: inline-block;
+margin: 10px auto;
+font-size: 30px;
+display: inline-block;
+white-space: nowrap;
+}*/
+
+
+
+.h5 {
+
+font-style: italic;
+text-align: center;
+}
+.h6 {
+margin-top: -4px !important;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+}
+
+.align {
+text-align: center;
+font-weight: bold;
+/*font-weight: normal;*/
+font-family: MyFont2;
+}
+
+
+
+.videowrapper {
+float: none;
+clear: both;
+width: 70%;
+position: relative;
+padding-bottom: 35.25%;
+padding-top: 35px;
+height: 0;
+display: block;
+margin: 0 auto;
+}
+
+.videowrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.h2 {
+background: #d4118c;
+display: inline-block;
+
+line-height: 18px;
+padding: 14px 30px;
+font-size: 24px;
+text-transform: uppercase;
+position: relative;
+margin: 30px auto;
+color: #fff;
+font-weight: bold;
+}
+
+img {
+width: 20%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+line-height: 0.1;
+display: block;
+}
+}
+
+
+

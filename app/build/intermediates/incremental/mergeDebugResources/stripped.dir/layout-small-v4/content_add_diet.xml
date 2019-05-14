@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/activity_add_diet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c3c3c3"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:text="Add Diet Entry"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+
+                <Spinner
+                    android:id="@+id/spn_select_diet_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:background="@drawable/custom_spinner_background"
+                    android:spinnerMode="dropdown" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="0.6"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorPrimaryDark">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edt_breakfast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#ffffff"
+                        android:hint="Enter Food Name"
+                        android:inputType="textCapSentences|textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorPrimaryDark" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_button_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="8sp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rel_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="S.No"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Diet"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Food Name"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_width="50sp"
+                    android:layout_height="40sp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="C"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/card_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

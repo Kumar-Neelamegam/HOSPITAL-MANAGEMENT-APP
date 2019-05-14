@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <!-- Header aligned to top -->
+
+
+    <!-- Header aligned to top -->
+
+    <LinearLayout
+        android:id="@+id/layouttop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#3d5987"
+            android:gravity="left|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#939598"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/total"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ourcolour" />
+
+            <TextView
+                android:id="@+id/amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ourcolour"
+                android:textColorHint="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Footer aligned to bottom -->
+
+    <!-- Footer Layout -->
+    <include
+        layout="@layout/common_footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Scrollable Item below header and above footer -->
+
+    <ScrollView
+        android:id="@+id/scrollableContents_report"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layouttop" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/patient_profile"
+            android:icon="@drawable/fab_dashboard_ic_my_patients"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/patient_info" />
+        <item
+            android:id="@+id/clinical_information"
+            android:icon="@drawable/fab_dashboard_ic_diagnosis_details"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/clinical_notes" />
+        <item
+            android:id="@+id/casenotes"
+            android:icon="@drawable/fab_dashboard_ic_case_book"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/casenotes" />
+        <item
+            android:id="@+id/investigation"
+            android:icon="@drawable/fab_dashboard_ic_medical_test"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/investigation" />
+        <item
+            android:id="@+id/previous_precription"
+            android:icon="@drawable/fab_dashboard_ic_prescription"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/prescription" />
+
+        <item
+            android:id="@+id/reports"
+            android:icon="@drawable/fab_dashboard_ic_case_book"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/patient_uploaded_reports" />
+        <item
+            android:id="@+id/immunization"
+            android:icon="@drawable/fab_dashboard_ic_case_book"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/immunization_history" />
+        <item
+            android:id="@+id/inpatient_summary"
+            android:icon="@drawable/fab_dashboard_ic_case_book"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/inpatient_summary" />
+        <item
+            android:id="@+id/pdf_summary"
+            android:icon="@drawable/fab_dashboard_ic_case_book"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/pdfreports" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,235 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Default application theme -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/blue_grey_600</item>
+
+        <item name="android:editTextStyle">@style/EditTextTestTheme</item>
+        <item name="android:textColorHighlight">#99003f72</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewTestTheme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxTestTheme</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonTestTheme</item>
+        <item name="android:spinnerStyle">@style/SpinnerTestTheme</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemTestTheme</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarTestTheme</item>
+        <item name="android:seekBarStyle">@style/SeekBarTesttheme</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Testtheme</item>
+
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="android:textViewStyle">@style/LabelStyle</item>
+
+    </style>
+
+
+    <style name="CustomEditTextStyle" parent="android:Widget.EditText">
+
+    </style>
+
+
+
+
+    <style name="Widget.DiscreteSeekBar" parent="android:Widget">
+        <item name="dsb_indicatorTextAppearance">@style/Widget.DiscreteIndicatorTextAppearance</item>
+        <item name="dsb_progressColor">@color/dsb_progress_color_list</item>
+        <item name="dsb_trackColor">@color/dsb_track_color_list</item>
+        <item name="dsb_rippleColor">@color/dsb_ripple_color_list</item>
+        <item name="dsb_indicatorColor">@color/dsb_progress_color</item>
+        <item name="dsb_indicatorElevation">4dp</item>
+        <item name="dsb_mirrorForRtl">true</item>
+    </style>
+
+    <style name="Widget.DiscreteIndicatorTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">10dip</item>
+        <item name="android:max">100</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:progressDrawable">@drawable/custom_progress_bar_horizontal</item>
+    </style>
+
+    <style name="LabelStyle" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/verdana</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault</item>
+    </style>
+
+    <style name="TextView_HeadingTitle" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/verdana</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="ActionBarTabStyle.Testtheme" parent="android:Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_testtheme</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="Theme.AppCompat.Light.DarkActionBar" />
+
+    <style name="Theme">theme</style>
+
+
+    <style name="EditTextTestTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/testtheme_edit_text_holo_light</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="SeekBarTesttheme" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">
+            @drawable/testtheme_scrubber_progress_horizontal_holo_light
+        </item>
+        <item name="android:indeterminateDrawable">
+            @drawable/testtheme_scrubber_progress_horizontal_holo_light
+        </item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:thumb">@drawable/testtheme_scrubber_control_selector_holo_light</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+    <style name="AutoCompleteTextViewTestTheme" parent="android:Widget.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/testtheme_list_selector_holo_light</item>
+        <item name="android:background">@drawable/testtheme_edit_text_holo_light</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="CheckBoxTestTheme" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/testtheme_btn_check_holo_light</item>
+    </style>
+
+    <style name="RadioButtonTestTheme" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/testtheme_btn_radio_holo_light</item>
+    </style>
+
+    <style name="SpinnerTestTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/testtheme_spinner_background_holo_light</item>
+
+        <item name="android:dropDownSelector">@drawable/testtheme_list_selector_holo_light</item>
+    </style>
+
+
+    <style name="PositiveButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:padding">3dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/verdana</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/ripple_effect_positive</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="NegativeButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:padding">3dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/verdana</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/ripple_effect_negative</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="SpinnerDropDownItemTestTheme" parent="android:Widget.DropDownItem.Spinner">
+        <item name="android:checkMark">@drawable/testtheme_btn_radio_holo_light</item>
+    </style>
+
+    <style name="ProgressBarTestTheme" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/testtheme_progress_horizontal_holo_light
+        </item>
+        <item name="android:indeterminateDrawable">
+            @drawable/testtheme_progress_indeterminate_horizontal_holo_light
+        </item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+
+    <style name="CropButton">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/testtheme_list_selector_background_transition_holo_light</item>
+    </style>
+
+    <style name="MyTitleTextStyle">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">#FFC107</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <!-- Used for the background -->
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:windowTitleStyle">@style/MyTitleTextStyle</item>
+        <item name="android:panelTextAppearance">@color/white</item>
+    </style>
+
+    <style name="RippleStyle">
+        <item name="rippleOverlay">true</item>
+        <item name="rippleColor">@color/main_color_grey_300</item>
+        <item name="rippleAlpha">0.7</item>
+        <item name="rippleDimension">45dp</item>
+        <item name="rippleHover">true</item>
+        <item name="rippleDuration">200</item>
+        <item name="rippleFadeDuration">50</item>
+        <item name="rippleBackground">@android:color/transparent</item>
+        <item name="rippleDelayClick">true</item>
+        <item name="ripplePersistent">false</item>
+        <item name="rippleInAdapter">false</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogAnimation2">
+        <item name="android:windowEnterAnimation">@anim/abc_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/abc_slide_out_top</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">ThemeOverlay</style>
+
+    <declare-styleable name="NotificationBadge">
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="nbBackground" format="reference" />
+        <attr name="nbAnimationEnabled" format="boolean" />
+        <attr name="nbAnimationDuration" format="integer" />
+        <attr name="nbMaxTextLength" format="integer" />
+        <attr name="nbEllipsizeText" format="string" />
+    </declare-styleable>
+
+</resources>

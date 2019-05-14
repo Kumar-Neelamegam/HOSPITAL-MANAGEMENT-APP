@@ -1,0 +1,1912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/clinical_parent_layout"
+    android:layout_height="match_parent"
+    tools:context="kdmc_kumar.Core_Modules.ClinicalInformation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--- Toolbar Layout -->
+        <include
+            layout="@layout/common_toolbar_with_two_action_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <!-- Main Layout -->
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/clinicalinformation_nesetedscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/grey_200"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Top Layout -->
+                <LinearLayout
+                    android:id="@+id/upperlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ourcolour"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/ourcolourgrey"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:text="@string/patient_details"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="175dp"
+                                android:background="@color/ourcolour"
+                                android:orientation="vertical">
+
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:alpha="0.6"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/banner_top1" />
+
+
+                            </LinearLayout>
+
+                            <kdmc_kumar.Utilities_Others.CircleImageView
+                                android:id="@+id/imgvw_patientphoto"
+                                android:layout_width="210dp"
+                                android:layout_height="210dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:padding="5dp"
+                                app:civ_border_color="#ffffff"
+                                app:civ_border_width="3dp"
+                                android:src="@drawable/image" />
+
+                            <TextView
+                                android:id="@+id/tvw_agegender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/imgvw_patientphoto"
+                                android:background="#80ffffff"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/hypon"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtvw_title_patientname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="@string/entrpname"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/White"
+                                android:textStyle="normal" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autocomplete_patientname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:cursorVisible="true"
+                                android:drawableBottom="@android:color/transparent"
+                                android:ems="10"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/white"
+                                android:textColorHint="@android:color/darker_gray"
+                                android:textCursorDrawable="@null"
+                                tools:ignore="LabelFor" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/White" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <!-- PREVIOUS MEDICAL HISTORY -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/prevmed"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_prevmedhistory"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_pms_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Secondary inner content layout -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="@string/add_prevmed"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="@color/ourcolour"
+                                        android:textStyle="normal"
+                                        tools:ignore="RtlHardcoded" />
+
+                                    <Button
+                                        android:id="@+id/imgbutotn_prevmedhistory"
+                                        style="@style/PositiveButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/add"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/edt_prevmedhistory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@color/grey_200"
+                                    android:cursorVisible="true"
+                                    android:drawableBottom="@android:color/transparent"
+                                    android:ems="10"
+                                    android:inputType="textMultiLine"
+                                    android:padding="10dp"
+                                    android:scrollbars="horizontal|vertical"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    tools:ignore="LabelFor" />
+
+
+                                <EditText
+                                    android:id="@+id/edt_prevmedhistory_others"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/grey_200"
+                                    android:cursorVisible="true"
+                                    android:drawableBottom="@android:color/transparent"
+                                    android:ems="10"
+                                    android:hint="@string/others"
+                                    android:inputType="textPersonName"
+                                    android:maxLength="120"
+                                    android:padding="10dp"
+                                    android:scrollbars="horizontal|vertical"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    tools:ignore="LabelFor" />
+
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_prevmedhistory"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- HEREDITARY DISEASES -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/hereditary_diseases"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_hereditary_diseases"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_hd_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Secondary inner content layout -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="@string/hereditary_diseases"
+                                        android:textColor="@color/ourcolour"
+                                        android:textStyle="normal" />
+
+                                    <Button
+                                        android:id="@+id/button_hereditary_diseases"
+                                        style="@style/PositiveButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/add"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+
+                                <EditText
+                                    android:id="@+id/edt_hereditary_diseases"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@color/grey_200"
+                                    android:cursorVisible="true"
+                                    android:drawableBottom="@android:color/transparent"
+                                    android:ems="10"
+                                    android:inputType="textMultiLine"
+                                    android:padding="10dp"
+                                    android:scrollbars="horizontal|vertical"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@+id/edt_hereditary_diseases_others"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/grey_200"
+                                    android:cursorVisible="true"
+                                    android:drawableBottom="@android:color/transparent"
+                                    android:ems="10"
+                                    android:hint="@string/others"
+                                    android:inputType="textMultiLine"
+                                    android:padding="10dp"
+                                    android:scrollbars="horizontal|vertical"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    tools:ignore="LabelFor" />
+
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_hereditary_diseases"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- PERSONAL HISTORY -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/personal_history"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_personal_history"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_ph_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Secondary inner content layout -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/TextView01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:width="80dp"
+                                        android:text="@string/smoking"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="@color/ourcolour"
+                                        android:textStyle="normal" />
+
+                                    <Spinner
+                                        android:spinnerMode="dialog"
+                                        android:id="@+id/spinner_ph_smoking"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/abc_spinner_textfield_background_material"
+                                        android:padding="5dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/TextView02"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:width="80dp"
+                                        android:text="@string/alcohol"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="@color/ourcolour"
+                                        android:textStyle="normal" />
+
+                                    <Spinner
+                                        android:spinnerMode="dialog"
+
+                                        android:background="@drawable/abc_spinner_textfield_background_material"
+                                        android:id="@+id/spinner_ph_alcohol"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="5dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/TextView03"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:width="80dp"
+                                        android:text="@string/tobacco"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="@color/ourcolour"
+                                        android:textStyle="normal" />
+
+                                    <Spinner
+
+                                        android:background="@drawable/abc_spinner_textfield_background_material"
+                                        android:id="@+id/spinner_ph_tobacco"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:spinnerMode="dialog"
+                                        android:padding="5dp"
+                                        android:singleLine="true"
+                                        android:textStyle="normal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="2dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/bowel_habits"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textColor="@color/ourcolour"
+                                            android:textStyle="normal" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <RadioButton
+                                            android:id="@+id/rbtn_bowel_normal"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:onClick="onRadioButtonClicked"
+                                            android:text="@string/normal" />
+
+                                        <RadioButton
+                                            android:id="@+id/rbtn_bowel_altered"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:onClick="onRadioButtonClicked"
+                                            android:text="@string/altered" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="2dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/micturition"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textColor="@color/ourcolour"
+                                            android:textStyle="normal" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <RadioButton
+                                            android:id="@+id/rbtn_mic_normal"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:onClick="onRadioButtonClicked"
+                                            android:text="@string/normal" />
+
+                                        <RadioButton
+                                            android:id="@+id/rbtn_mic_altered"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:onClick="onRadioButtonClicked"
+                                            android:text="@string/altered" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:width="80dp"
+                                        android:text="@string/others"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="@color/ourcolour"
+                                        android:textStyle="normal" />
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/edt_ph_others"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/grey_200"
+                                        android:ems="10"
+                                        android:maxLength="120"
+                                        android:padding="10dp"
+                                        android:singleLine="true"
+                                        android:textStyle="normal" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_personal_history"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- FAMILY MEDICAL HISTORY -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/family_medical_history"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_family_medicial_history"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_fmh_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Secondary inner content layout -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="3dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/select_disease"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textColor="@color/ourcolour"
+                                            android:textStyle="normal" />
+
+                                        <Spinner
+                                            android:background="@drawable/abc_spinner_textfield_background_material"
+                                            android:id="@+id/spinner_fmh_dieases"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <Button
+                                            android:id="@+id/button_fmh_selectrelationship"
+                                            style="@style/PositiveButton"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="left"
+                                            android:layout_margin="0dp"
+                                            android:gravity="left|center"
+                                            android:padding="5dp"
+                                            android:text="@string/select_family_relationship"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/white" />
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <EditText
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:id="@+id/edt_fmh_selectedtext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/linearLayout9"
+                                    android:background="@color/grey_200"
+                                    android:ems="10"
+                                    android:layout_marginTop="10dp"
+                                    android:inputType="textMultiLine"
+                                    android:padding="10dp" />
+
+                                <EditText
+
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:id="@+id/edt_fmh_others"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/grey_200"
+                                    android:ems="10"
+                                    android:hint="@string/others"
+                                    android:padding="10dp"
+                                    android:singleLine="true"
+                                    android:inputType="text" />
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_family_medical_history"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- MEDICATION HISTORY -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/medication_history"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_medication_history"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_mh_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Secondary inner content layout -->
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView   android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="80dp"
+                                    android:text="@string/treatment_for"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <MultiAutoCompleteTextView
+
+                                    android:padding="10dp"
+                                    android:background="@color/grey_200"
+                                    android:id="@+id/edt_mh_treatmentfor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="80dp"
+                                    android:text="@string/medicine_name"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <AutoCompleteTextView
+                                    android:padding="10dp"
+                                    android:background="@color/grey_200"
+                                    android:id="@+id/edt_mh_medicine_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:textStyle="normal"
+                                    tools:ignore="LabelFor" />
+
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="80dp"
+                                    android:text="@string/period"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <Spinner
+                                    android:background="@drawable/abc_spinner_textfield_background_material"
+                                    android:padding="5dp"
+                                    android:id="@+id/spinner_mh_period"
+                                    android:spinnerMode="dialog"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+
+                                <Button
+                                    android:id="@+id/button_mh_add"
+                                    style="@style/PositiveButton"
+                                    android:layout_gravity="right"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:text="@string/add"
+                                    android:textColor="@color/white" />
+
+
+
+                                <!-- Ponnu -->
+
+                                !-- Ponnu -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/treatmentfor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:padding="10dp"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:text="@string/treatment_for" />
+                                    <View
+                                        android:layout_width="2dp"
+                                        android:background="@color/white"
+                                        android:layout_height="match_parent"/>
+
+                                    <TextView
+                                        android:id="@+id/medicine_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/white"
+                                        android:padding="10dp"
+                                        android:textStyle="bold"
+                                        android:text="@string/medicine_name" />
+                                    <View
+                                        android:layout_width="2dp"
+                                        android:background="@color/white"
+                                        android:layout_height="match_parent"/>
+                                    <TextView
+                                        android:id="@+id/period"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/white"
+                                        android:padding="10dp"
+                                        android:textStyle="bold"
+                                        android:text="@string/period" />
+                                </LinearLayout>
+
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerView_mh"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+
+
+                            </LinearLayout>
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_medication_history"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- ALLERGY -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/allergies"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_allergy"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_allergy_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Secondary inner content layout -->
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center|left"
+                                        android:layout_weight="1"
+                                        android:text="@string/lblallergy"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="@color/ourcolour"
+                                        android:textStyle="normal" />
+
+                                    <Button
+                                        android:id="@+id/button_allergy_add"
+                                        style="@style/PositiveButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/add"
+                                        android:padding="0dp"
+                                        android:layout_margin="0dp"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:background="@color/grey_200"
+                                    android:padding="10dp"
+                                    android:id="@+id/edt_allergy_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:layout_marginTop="10dp"
+                                    android:inputType="textMultiLine"
+                                    android:scrollbars="horizontal|vertical"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    android:textStyle="normal|bold" />
+
+                                <EditText
+                                    android:id="@+id/edt_allergy_others"
+                                    android:layout_marginTop="10dp"
+                                    android:padding="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:ems="10"
+                                    android:hint="@string/others"
+                                    android:background="@color/grey_200"
+                                    android:inputType="textPersonName"
+                                    android:maxLength="120"
+                                    android:singleLine="true" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_allergy"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- IMMUNIZATION -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/immunization"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_immunization"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_immunization_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Secondary inner content layout -->
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:text="@string/immunization_taken"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <Button
+                                    android:id="@+id/button_immunization"
+                                    style="@style/PositiveButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="right"
+                                    android:gravity="right"
+                                    android:textAlignment="center"
+                                    android:text="@string/select_immunization" />
+
+
+                                <!-- recycler ponnu-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:padding="10dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/white"
+                                        android:text="@string/vaccinename" />
+                                    <View
+                                        android:layout_width="2dp"
+                                        android:background="@color/white"
+                                        android:layout_height="match_parent"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:padding="10dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/white"
+                                        android:text="@string/schedule" />
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recylerView_immunization"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_immunization"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- ANC HISTORY -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_eighth_anchistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/anc"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_anc_history"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_anc_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Secondary inner content layout -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:text="OBSTETIC COMPLICATION IN PREVIOUS PREGNANCY"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="5dp">
+
+                                    <CheckBox
+                                        android:id="@+id/chkbx_aph"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+
+                                        android:text="APH" />
+
+                                    <CheckBox
+                                        android:id="@+id/chkbx_eclampsia"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+
+                                        android:text="Eclampsia" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="5dp">
+
+                                    <CheckBox
+                                        android:id="@+id/chkbx_pih"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+
+                                        android:text="PIH" />
+
+                                    <CheckBox
+                                        android:id="@+id/chkbx_anaemia"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+
+                                        android:text="Anaemia" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp">
+
+                                    <CheckBox
+                                        android:id="@+id/chkbx_obla"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+
+                                        android:text="Obstructed labor" />
+
+                                    <CheckBox
+                                        android:id="@+id/chkbx_pph"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+
+                                        android:text="PPH" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="5dp">
+
+                                    <CheckBox
+                                        android:id="@+id/chkbx_lscs"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="LSCS" />
+
+                                    <CheckBox
+                                        android:id="@+id/chkbx_caib"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="Congenital anomaly in baby" />
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/anc_others"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:background="@color/grey_200"
+                                    android:ems="10"
+                                    android:hint="Others"
+                                    android:padding="10dp"
+                                    android:singleLine="true"
+                                    android:inputType="text" />
+
+                            </LinearLayout>
+
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_anc_history"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- OTHER MEDICAL HISTORY -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:minHeight="?android:attr/actionBarSize"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/other_medical_history"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                            <ImageButton
+                                android:id="@+id/arrow_other_medical_history"
+                                android:layout_width="?android:attr/actionBarSize"
+                                android:layout_height="?android:attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/ic_expand_arrow" />
+
+                        </LinearLayout>
+
+                        <!-- primary layout-->
+                        <LinearLayout
+                            android:id="@+id/primary_others_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- Secondary inner content layout -->
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/present_illness"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/psntilns"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/grey_200"
+
+                                    android:ems="10"
+                                    android:padding="10dp"
+                                    android:singleLine="true" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/ourcolourgrey"
+                                    android:text="@string/past_illness_details"
+                                    android:textColor="#ffffff" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/past_illness"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <AutoCompleteTextView
+
+                                    android:id="@+id/pastilnes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/grey_200"
+                                    android:ems="10"
+                                    android:padding="10dp"
+                                    android:singleLine="true" />
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/any_medication"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <AutoCompleteTextView
+
+                                    android:id="@+id/any_medicatin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/grey_200"
+                                    android:ems="10"
+                                    android:padding="10dp"
+                                    android:singleLine="true" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:background="@color/ourcolourgrey"
+                                    android:text="@string/previous_surgery_details"
+                                    android:textColor="#ffffff" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/obstetric"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/auto_obset"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/grey_200"
+
+                                    android:ems="10"
+                                    android:padding="10dp"
+                                    android:singleLine="true" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/gynaec"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/auto_gyna"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/grey_200"
+                                    android:ems="10"
+                                    android:padding="10dp"
+                                    android:singleLine="true" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/other_surgical_remarks"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/ourcolour"
+                                    android:textStyle="normal" />
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/edt_surgical_remarks"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/grey_200"
+                                    android:ems="10"
+                                    android:padding="10dp"
+                                    android:singleLine="true" />
+
+                            </LinearLayout>
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_10" />
+
+                            <Button
+                                android:id="@+id/hide_other_medical_history"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="@string/hide" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <!-- Bottom button layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:paddingTop="5dp">
+
+
+            <Button
+                android:id="@+id/button_cancel"
+                style="@style/NegativeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button_skip"
+                style="@style/PositiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/skip_to_investigation"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button_submit"
+                style="@style/PositiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+        <!-- Footer Layout -->
+        <include
+            layout="@layout/common_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

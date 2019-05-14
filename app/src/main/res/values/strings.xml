@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="Category_A">A(Controlled studies in women fail to demonstrate a risk to the foetus in the 1st trimester (and there is no evidence of a risk in later trimesters), and the possibility of foetal harm remains remote)</string>
+    <string name="Category_B">B(Either animal-reproduction studies have not demonstrated a foetal risk but there are no controlled studies in pregnant woman or animal-reproduction studies have shown an adverse effect (other than a decrease in fertility) that was not confirmed in controlled studies in women in the 1st trimester (and there is no evidence of a risk in later trimesters)).</string>
+    <string name="Category_C">C(Either studies in animals have revealed adverse effects on the foetus (teratogenic or embryocidal or other) and there are no controlled studies in women or studies in woman and animals are not available. Drugs should be given only if the potential benefit justifies the potential risk to the foetus.)</string>
+    <string name="Category_D">D(There is positive evidence of human foetal risk, but the benefits from use in pregnant woman may be acceptable despite the risk (e.g.,)if the drug is needed in a life-threatening situation or for a serious disease for which safer drugs cannot be used or are ineffective.))</string>
+    <string name="Category_X">X(Studies in animals or human beings have demonstrated foetal abnormalities or there is evidence of foetal risk based on human experience or both, and the risk of the use of the drug in pregnant woman clearly outweighs any possible benefit. The drug is contraindicated in woman   who are or may become pregnant.The publishers of CIMS do not guarantee that the list  of drugs discussed in this index is comprehensive or that they have been approved by the DCGI and or that they are available in india.  This list is to be used only as an educational tool and the prescribers are hereby requested to clarify the information using their own sources before reaching any conclusion that directly influences their prescribing decision. The Publishers of CIMS, the authors, their agents and sellers are not responsible for any errors or ommissions arising from negligence or otherwise and the consequences arising therefrom.)</string>
+    <!-- Login -->
+
+    <string-array name="gender_options">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+    </string-array>
+
+    <string-array name="temperaturetime">
+        <item>Select time</item>
+        <item>8AM</item>
+        <item>2PM</item>
+        <item>8PM</item>
+        <item>2AM</item>
+    </string-array>
+    <string-array name="temperaturecalculate">
+        <item>Select temperature</item>
+        <item>41   ℃   - 106 °F</item>
+        <item>40.5 ℃   - 105 °F</item>
+        <item>40   ℃   - 104 °F</item>
+        <item>39.5 ℃   - 103 °F</item>
+        <item>39   ℃   - 102 °F</item>
+        <item>38.5 ℃   - 101 °F</item>
+        <item>38   ℃   - 100 °F</item>
+        <item>37.5 ℃   - 99  °F</item>
+        <item>37   ℃   - 98.4 °F</item>
+        <item>36.5 ℃   - 98  °F</item>
+        <item>36   ℃   - 97  °F</item>
+        <item>35.5 ℃   - 96  °F</item>
+        <item>35   ℃   - 95  °F</item>
+    </string-array>
+
+    <string-array name="temperaturecalc">
+        <item>Select temperature</item>
+        <item>106 °F</item>
+        <item>105 °F</item>
+        <item>104 °F</item>
+        <item>103 °F</item>
+        <item>102 °F</item>
+        <item>101 °F</item>
+        <item>100 °F</item>
+        <item>99  °F</item>
+        <item>98.4 °F</item>
+        <item>98  °F</item>
+        <item>97  °F</item>
+        <item>96  °F</item>
+        <item>95  °F</item>
+    </string-array>
+    <!-- <string name="cloud_notes">\n<b>Note:</b>the above listed data has not been synched with the cloud server as internet connection is not available.We highly recommend you to connect to the internet and synchronize your device with cloud server</string> -->
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="txt_left">Left</string>
+    <string name="txt_right">Right</string>
+    <string name="txt_normal">Normal</string>
+    <string name="txt_enlarged">Enlarged</string>
+    <string name="txt_increase">Increased</string>
+    <string name="txt_decrease">Decreased</string>
+    <string name="txt_reduced">Reduced</string>
+    <string name="txt_present">Present</string>
+    <string name="txt_absent">Absent</string>
+    <string-array name="syrup_measure">
+        <item>Select</item>
+        <item>1 ml</item>
+        <item>2 ml</item>
+        <item>5 ml</item>
+        <item>10 ml</item>
+        <item>15 ml</item>
+        <item>20 ml</item>
+        <item>30 ml</item>
+    </string-array>
+
+    <string-array name="drops_measure">
+        <item>Select</item>
+        <item>1 drop</item>
+        <item>2 drops</item>
+        <item>3 drops</item>
+        <item>4 drops</item>
+        <item>5 drops</item>
+        <item>6 drops</item>
+        <item>7 drops</item>
+        <item>8 drops</item>
+        <item>9 drops</item>
+        <item>10 drops</item>
+        <item>11 drops</item>
+        <item>12 drops</item>
+        <item>13 drops</item>
+        <item>14 drops</item>
+        <item>15 drops</item>
+        <item>16 drops</item>
+        <item>17 drops</item>
+        <item>18 drops</item>
+        <item>19 drops</item>
+        <item>20 drops</item>
+        <item>21 drops</item>
+        <item>22 drops</item>
+        <item>23 drops</item>
+        <item>24 drops</item>
+        <item>25 drops</item>
+        <item>26 drops</item>
+        <item>27 drops</item>
+        <item>28 drops</item>
+        <item>29 drops</item>
+        <item>30 drops</item>
+    </string-array>
+
+    <string-array name="oint_measure">
+        <item>Select</item>
+        <item>1 tube</item>
+        <item>2 tube</item>
+        <item>3 tube</item>
+        <item>4 tube</item>
+        <item>5 tube</item>
+        <item>6 tube</item>
+        <item>7 tube</item>
+        <item>8 tube</item>
+        <item>9 tube</item>
+        <item>10 tube</item>
+        <item>11 tube</item>
+        <item>12 tube</item>
+        <item>13 tube</item>
+        <item>14 tube</item>
+        <item>15 tube</item>
+        <item>16 tube</item>
+        <item>17 tube</item>
+        <item>18 tube</item>
+        <item>19 tube</item>
+        <item>20 tube</item>
+        <item>21 tube</item>
+        <item>22 tube</item>
+        <item>23 tube</item>
+        <item>24 tube</item>
+        <item>25 tube</item>
+        <item>26 tube</item>
+        <item>27 tube</item>
+        <item>28 tube</item>
+        <item>29 tube</item>
+        <item>30 tube</item>
+    </string-array>
+
+
+    <string name="frequency">Frequency</string>
+    <string name="nextvisiton">Next Visit On</string>
+    <string-array name="prefix">
+        <item>Mr.</item>
+        <item>Dr.</item>
+        <item>Master</item>
+        <item>Mrs.</item>
+        <item>Miss.</item>
+        <item>Baby.</item>
+        <item>Tgr</item>
+    </string-array>
+
+    <string-array name="age_range">
+        <item>0</item>
+        <item>1–10</item>
+        <item>21–30</item>
+        <item>31–40</item>
+        <item>41–50</item>
+        <item>51–60</item>
+        <item>61–70</item>
+        <item>71–80</item>
+        <item>81–90</item>
+        <item>91–100</item>
+    </string-array>
+
+
+    <string-array name="prefix1">
+        <item>Mr.</item>
+        <item>Dr.</item>
+    </string-array>
+    <string name="phone">Phone</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="saving_image">Saving image</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="age">Age</string>
+    <string name="addrs">Address</string>
+    <string name="prevmed">Previous Medical History</string>
+    <string name="add_prevmed">Previous Medical History</string>
+    <string name="submit">Submit</string>
+    <string name="entrpname">Patient Name*</string>
+    <string name="ptntphotoprvw">Patient Photo Preview</string>
+    <string name="clinicname">Clinic Name</string>
+    <string name="gender">Gender</string>
+    <string name="dddignodtls">Provisional Diagnosis*</string>
+
+    <string name="docemail">Email Id*</string>
+    <string name="prpname">Patient Name</string>
+    <string name="country">Country</string>
+    <string name="lblpostalcode">Pincode</string>
+    <string name="lblallergy">Allergic To</string>
+    <string name="doctorname">Doctor Name*</string>
+    <string name="drrefremarks">Remarks</string>
+    <string name="bodytemp">Temperature(ºF)</string>
+    <string name="medicinename">Medicine Name</string>
+    <string name="lblfreq">Frequency</string>
+    <string name="app_name">KDMC</string>
+    <string name="city">City</string>
+    <string name="title_activity_my_patient">MyPatient</string>
+    <string name="title_activity_setting">Settings</string>
+    <string name="title_activity_reports">ReportsActivity</string>
+    <string name="title_activity_report__dailyconsulation">ReportDailyconsulation</string>
+    <string name="title_activity_report_fee_collection">FeeCollectionReport</string>
+    <string name="title_activity_report__list_of_test_prescribed">ListOfTestPrescribed</string>
+    <string name="title_activity_report__list_of_medicine_prescribed">ListOfTestMedicinePrescribed</string>
+    <string name="title_activity_report__list_of_donor">ListOfDonors</string>
+    <string name="title_inpatient">Inpatient</string>
+    <string name="title_activity_report__list_of_newpatient">New Patient Register</string>
+    <string name="title_activity_templates_list">Templates List</string>
+    <string name="title_activity_templates_new">Templates Add New</string>
+    <string name="title_activity_inpatient__display">Inpatient_Display</string>
+
+    <!-- Mobydoctor New changes -->
+    <!--
+    Muthukumar N (7-3-16)
+    Clinical Information [Design compatability]
+    -->
+    <string name="txt_footer">Powered by Devatech Info Systems Pvt. Ltd.</string>
+
+    <!-- Prescription Layout @ Muthukumar N 8/3/16 -->
+
+
+    <!-- Reports Title -->
+    <string name="title_reports1">Daily Consulation Report</string>
+    <string name="title_reports2">New Patient Register</string>
+    <string name="title_reports3">Specialist Referral Report</string>
+    <string name="title_reports4">Pharmacy Referral Report</string>
+    <string name="title_reports5">Diagnostic Centre Referral Report</string>
+    <string name="title_reports6">Professional Charges Report</string>
+
+    <string name="calories_per_day">calories/per day</string>
+
+
+    <!--you have to translate after this-->
+
+
+    <string name="welcome">Welcome </string>
+    <string name="patient_info_label">Patient\nInformation</string>
+    <string name="username">Username</string>
+    <string name="sign_out">Signout</string>
+    <string name="view_profile">View Profile</string>
+    <string name="change_pwd">Change Password</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="trail_label">Sorry, this trail application has expired.\nTo continue, please purchase a full copy..</string>
+    <string name="app_expired">Sorry, application license expired.\nApplication details: \nInstalled date:</string>
+    <string name="case_notes">Case\nNotes</string>
+    <string name="investigation">Investigations</string>
+    <string name="prescription">Prescription</string>
+    <string name="spec_referal">Specialist\nReferrals</string>
+    <string name="my_pat">My Patients</string>
+    <string name="report">Reports</string>
+    <string name="master">Masters</string>
+    <string name="drug_dir">Drug\nDirectory</string>
+    <string name="drug_dir2">Drug Directory</string>
+    <string name="inpat">Inpatient</string>
+    <string name="online_consult">Online\nConsultation</string>
+    <string name="cloud">Cloud\n</string>
+
+
+    <!--///**new Sring-->
+
+
+    <string name="date_of_birth">Date of Birth :</string>
+    <string name="academic_qualification">Academic Qualification</string>
+    <string name="mci_registration_no">MCI Registration No.</string>
+    <string name="service_tax_no">Service Tax No.</string>
+    <string name="address1">Address1</string>
+    <string name="address2">Address2</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="english">English</string>
+    <string name="marathi">Marathi</string>
+    <string name="would_you_like_to_login_using_a_pin_number">Would you like to login using a pin number?</string>
+    <string name="select_working_days">Select working days</string>
+    <string name="enter_4_digit_pin">Enter 4 Digit Pin</string>
+    <string name="add">Add</string>
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="do_you_wish_to_enable_prior_appointments">Do you wish to enable prior appointments?</string>
+    <string name="no_of_patients_per_slot_30minutes">No of patients per slot (30Minutes)</string>
+    <string name="do_you_wish_to_receive_daily_appointment_schedule_via_sms">Do you wish to receive daily appointment schedule via SMS?</string>
+    <string name="would_you_like_to_keep_track_of_your_referrals_relating_to_pharmacy_and_labs">Would you like to keep track of your referrals relating to pharmacy and labs?</string>
+    <string name="please_list_out_your_preferred_pharmacy">Please list out your preferred pharmacy*</string>
+    <string name="please_list_out_your_preferred_diagnostic_centre">Please list out your preferred diagnostic centre*</string>
+    <string name="letter_head_space">Letter Head Space</string>
+    <string name="moby_settings">Settings</string>
+    <string name="selct_valid_timing">Select valid timing</string>
+    <string name="ched_mis_valid_data"><![CDATA[check for missing & valid Data]]></string>
+    <string name="prefred_pharmacies">Please list out your preferred pharmacies</string>
+    <string name="prefer_diag">Please list out your preferred diagnostic centre</string>
+    <string name="nebale_pin_no">Enable Login Using Pin Number</string>
+    <string name="check_missing"><![CDATA[check for missing & valid Data]]></string>
+    <string name="all_settings">All settings saved successfully</string>
+    <string name="practitioner_name">Practitioner Name</string>
+    <string name="practitioner_id">Practitioner Id</string>
+    <string name="title_doctor_referral">Doctor Referral</string>
+    <!--/***not yet translates nabme*////-->
+    <string name="personal_details">Personal Details</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="state">State</string>
+    <string name="splin">Specialization In</string>
+    <string name="clinicphnm">Clinic Phone Number</string>
+    <string name="hospname">Clinic Name</string>
+    <string name="blood_group">Blood group</string>
+    <string name="caste">Caste</string>
+    <string name="income">Income</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="email">Email</string>
+    <string name="referred_doctor_name">Referred Doctor Name</string>
+    <string name="patient_photo">Patient Photo</string>
+    <string name="next">Next</string>
+    <string name="blood_pressure_value">Blood Pressure</string>
+    <string name="general_examination">General Examination</string>
+    <string name="lean">Lean</string>
+    <string name="obese">Obese</string>
+    <string name="cardio_vascular_system">Cardio Vascular System</string>
+    <string name="heart_rate">Heart rate</string>
+    <string name="blood_sugar">Blood Sugar</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="weight">Weight</string>
+    <string name="clinical_informaiton">Clinical Information</string>
+    <string name="pat_name">Patient Name</string>
+    <string name="press_again">Press again to cancel…</string>
+    <string name="select_value">Select Values…</string>
+    <string name="warning">Warning</string>
+    <string name="select_list">Selected List Already Added…</string>
+    <string name="select_disease">Select disease</string>
+    <string name="immune_list">Immunization List</string>
+    <string name="ok">OK</string>
+    <string name="not_pat_regist">Patient not registered</string>
+    <string name="info">Information</string>
+    <string name="enteR_pat_name">Enter Patient Name</string>
+    <string name="patient_details">Patient Details</string>
+    <string name="previous_medical_history">Previous Medical History</string>
+
+    <string name="previous_medical_history_others">Previous Medical History Others</string>
+    <string name="others">Others</string>
+    <string name="hereditary_diseases">Hereditary Diseases</string>
+    <string name="personal_history">Personal History</string>
+    <string name="smoking">Smoking</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="tobacco">Tobacco</string>
+    <string name="bowel_habits">Bowel Habits</string>
+    <string name="normal">Normal</string>
+    <string name="altered">Altered</string>
+    <string name="micturition">Micturition</string>
+    <string name="family_medical_history">Family Medical History</string>
+    <string name="select_family_relationship">Select Family Relationship</string>
+    <string name="medication_history">Medication History</string>
+    <string name="treatment_for">Treatment For </string>
+    <string name="medicine_name">Medicine Name </string>
+    <string name="period">Period</string>
+    <string name="allergies">Allergies</string>
+    <string name="immunization_taken">Immunization Taken</string>
+    <string name="present_illness">Present Illness</string>
+    <string name="past_illness">Past Illness</string>
+    <string name="any_medication">Any medication</string>
+    <string name="previous_surgery_details">Previous Surgery details</string>
+    <string name="obstetric">Obstetric</string>
+    <string name="gynaec">Gynaec</string>
+    <string name="other_surgical_remarks">Other Surgical Remarks</string>
+    <string name="skip_to_case_notes">Skip to case notes</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="symptoms_mandatory">Symptoms *</string>
+    <string name="general_test">General Test</string>
+    <string name="my_preferred_test_list">My Preferred Test List</string>
+    <string name="all_test">All Test</string>
+    <string name="scan_name">Scan Name</string>
+    <string name="x_ray">X-Ray</string>
+    <string name="ecg">ECG</string>
+    <string name="ecg_treadmill">ECG - Treadmill</string>
+    <string name="eeg">EEG</string>
+    <string name="angiogram">Angiogram</string>
+    <string name="coronary">Coronary</string>
+    <string name="brain">Brain</string>
+    <string name="lower_limb">Lower limb</string>
+    <string name="mesenteric">Mesenteric</string>
+    <string name="upper_limb">Upper limb</string>
+    <string name="preferred_diagnostic_center">Preferred diagnostic center</string>
+    <string name="diagnostic_center">Diagnostic center</string>
+    <string name="diagnostic_center_address">Diagnostic center address</string>
+    <string name="set_as_default_preferred_diagnostic_center">set as default preferred diagnostic center</string>
+
+
+    <string name="mypatient">My Patients</string>
+
+    <string name="skip_to_prescription">Skip to prescription</string>
+    <string name="patint_name">Patient Name</string>
+    <string name="total_test">Total No of Test :</string>
+    <string name="already_exist">Already Exists</string>
+    <string name="delete_Confirmation">Delete Confirmation</string>
+    <string name="delete_ques">Do you want to Delete?</string>
+    <string name="no_test_popuyp">No test available - add preferred test from master</string>
+    <string name="enter_pat_name">Enter Patient Name</string>
+    <string name="removed">removed</string>
+    <string name="testname">TestName / SubTestName List</string>
+    <string name="skip_pre">Are you sure you want to skip to prescription?</string>
+    <string name="skip_to_pres">Skip to prescription</string>
+    <string name="del_confirmaiton">Delete Confirmation</string>
+    <string name="deletE_question">Do you want to Delete?</string>
+    <string name="check_missing_valid"><![CDATA[check for missing & valid Data]]></string>
+    <string name="delet_conf">Delete Confirmation</string>
+    <string name="delete_quesr">Do you want to Delete?</string>
+
+    <string name="txt_symptoms">Symptoms</string>
+    <string name="txt_medicine_dtls">Medicine Details</string>
+    <string name="txt_all">Check All</string>
+    <string name="txt_morning">Morning</string>
+    <string name="txt_afternoon">Afternoon</string>
+    <string name="txt_evening">Evening</string>
+    <string name="txt_night">Night</string>
+    <string name="txt_afterfood">After Food</string>
+    <string name="txt_beforefood">Before Food</string>
+    <string name="txt_withfood">With Food</string>
+    <string name="btn_adddrug">Add Drug</string>
+    <string name="txt_nxtvisit">Next Visiting Date</string>
+    <string name="txt_visit">Visit After (Days)</string>
+    <string name="txt_nxtvisit2">Visited On</string>
+    <string name="txt_nxtvisiton">Next visit on</string>
+    <string name="txt_remarks">Remarks</string>
+    <string name="txt_pharmaname">Pharmacy name</string>
+    <string name="txt_pharmaadd">Pharmacy address</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_submit">Submit</string>
+    <string name="anaemic">Anaemic</string>
+    <string name="icterus">Icterus</string>
+    <string name="cyanosis">Cyanosis</string>
+    <string name="clubbing">Clubbing</string>
+    <string name="lymphadenopathy">Lymphadenopathy</string>
+    <string name="varicose_veins">Varicose veins</string>
+    <string name="_pedal_edema">Pedal edema</string>
+    <string name="message_exit">Are you sure you want to Exit?</string>
+    <string name="message_title">Exit application</string>
+    <string name="intake">Intake</string>
+    <string name="vist_after_days">Visit After(Days)</string>
+    <string name="prof_charges">Professional Charges</string>
+    <string name="med_details">Medicine Details</string>
+    <string name="provisional_diagnosis">Provisional Diagnosis</string>
+    <string name="refferal_dco">Referral Doctor</string>
+    <string name="email_id">Email Id</string>
+    <string name="referral_content">Referral Content</string>
+    <string name="odc_name">Doctor Name</string>
+    <string name="prov_diag">Provisional Diagnosis:</string>
+    <string name="my_patients">My Patients</string>
+    <string name="no_of_pat">No of patients</string>
+    <string name="visited_on">Visited On</string>
+    <string name="diagnosis_details">Diagnosis Details</string>
+    <string name="weight_kg">Weight(Kg)</string>
+    <string name="height_cms">Height(Cms)</string>
+    <string name="bmi">BMI</string>
+    <string name="temperature_f">Temperature(ºF)</string>
+    <string name="built">Built :</string>
+    <string name="rbs">RBS</string>
+    <string name="remarks">Remarks</string>
+    <string name="xray_for">Xray for</string>
+    <string name="test_remark">Test Remark</string>
+    <string name="pincode">Pincode</string>
+    <string name="eeg_for">EEG for</string>
+    <string name="eeg_summary">EEG Summary</string>
+    <string name="pr_interval_secs_t_t">PR Interval(secs)\t\t</string>
+    <string name="bundle_branch">Bundle branch</string>
+    <string name="rhythm">Rhythm</string>
+    <string name="treadmill">Treadmill</string>
+    <string name="apraxia">Apraxia :</string>
+    <string name="amnesia">Amnesia :</string>
+    <string name="carotid">Carotid :</string>
+    <string name="speech">Speech :</string>
+    <string name="pupil_size">Pupil Size :</string>
+    <string name="neurology_system">Neurology System</string>
+    <string name="scrotum">Scrotum :</string>
+    <string name="tenderness">Tenderness :</string>
+    <string name="distension">Distension :</string>
+    <string name="free_fluid_in_the_abdomen">Free fluid in the abdomen :</string>
+    <string name="organomegaly">Organomegaly :</string>
+    <string name="liver">Liver :</string>
+    <string name="spleen">Spleen :</string>
+    <string name="hernial">Hernial :</string>
+    <string name="bowel_sound">Bowel Sound :</string>
+    <string name="palpable_masses">Palpable Masses :</string>
+    <string name="hepatomegaly">Hepatomegaly :</string>
+    <string name="splenomegaly">Splenomegaly :</string>
+    <string name="abdominal_palpation">Abdominal Palpation :</string>
+    <string name="visible_pulsations">Visible Pulsations :</string>
+    <string name="abdomen">Abdomen :</string>
+    <string name="shape_of_the_abdomen">Shape of the Abdomen :</string>
+    <string name="gastrointestinal_system">Gastrointestinal System</string>
+    <string name="spo2">SPO2</string>
+    <string name="shape_of_the_chest">Shape of the Chest</string>
+    <string name="respiratory_rate">Respiratory Rate</string>
+    <string name="rhonchi">Rhonchi</string>
+    <string name="crepitation">Crepitation</string>
+    <string name="trachea">Trachea</string>
+    <string name="respiratory_system">Respiratory System</string>
+    <string name="pulse_rate">Pulse Rate :</string>
+    <string name="murmur">Murmur :</string>
+    <string name="beat">Beat :</string>
+    <string name="axis_deviation">Axis Deviation</string>
+    <string name="rate">Rate</string>
+    <string name="ecg_diagnostic_summary">ECG Diagnostic Summary</string>
+    <string name="tsh">TSH</string>
+    <string name="free_t4">Free T4</string>
+    <string name="free_t3">Free T3</string>
+    <string name="thyroid_profile">Thyroid Profile</string>
+    <string name="alkaline_phosphatase">Alkaline Phosphatase</string>
+    <string name="sgpt">SGPT</string>
+    <string name="sgot">SGOT</string>
+    <string name="globulin">Globulin</string>
+    <string name="albumin">Albumin</string>
+    <string name="total_protein">Total protein</string>
+    <string name="indirect">Indirect</string>
+    <string name="direct">Direct</string>
+    <string name="serum_bilirubin_total">Serum bilirubin(Total)</string>
+    <string name="liver_function_test">Liver Function Test</string>
+    <string name="triglycerides">Triglycerides</string>
+    <string name="vldl">VLDL</string>
+    <string name="hdl">HDL</string>
+    <string name="ldl">LDL</string>
+    <string name="total_cholesterol">Total Cholesterol</string>
+    <string name="lipo_profile">Lipo Profile</string>
+    <string name="bicarbonate">Bicarbonate</string>
+    <string name="chloride">Chloride</string>
+    <string name="potassium">Potassium</string>
+    <string name="sodium">Sodium</string>
+    <string name="electrolytes">Electrolytes</string>
+    <string name="uric_acid">Uric Acid</string>
+    <string name="creatinine">Creatinine</string>
+    <string name="urea">Urea</string>
+    <string name="eosinophils">Eosinophils</string>
+    <string name="renal_markers">Renal Markers</string>
+    <string name="basophils">Basophils</string>
+    <string name="monocytes">Monocytes</string>
+    <string name="polymorphs">Polymorphs</string>
+    <string name="lymphocytes">Lymphocytes</string>
+    <string name="esr">ESR</string>
+    <string name="rbc">RBC</string>
+    <string name="haemoglobin_g_dl">Haemoglobin(g/dl)</string>
+    <string name="haemogram">Haemogram</string>
+    <string name="clinical_data">Clinical Data</string>
+    <string name="additional_information_finding">Additional Information / Finding</string>
+    <string name="other_systems">Other Systems</string>
+    <string name="endocrine_system">Endocrine System</string>
+    <string name="renal_system">Renal System</string>
+    <string name="spine">Spine</string>
+    <string name="gait">Gait</string>
+    <string name="locomotor_system">Locomotor System</string>
+    <string name="mental_status">Mental status :</string>
+    <string name="congential_abnormality">Congential Abnormality :</string>
+    <string name="musclo_skeletal_systems">Musclo Skeletal Systems</string>
+    <string name="coma">Coma :</string>
+    <string name="flexor">Flexor :</string>
+    <string name="depressed">Depressed :</string>
+    <string name="incomprehensible">Incomprehensible :</string>
+    <string name="gs_score">GS Score :</string>
+    <string name="extenstor">Extenstor :</string>
+    <string name="exaggerated">Exaggerated :</string>
+    <string name="confused">Confused :</string>
+    <string name="neck_rigidity">Neck rigidity :</string>
+    <string name="oriented">Oriented :</string>
+    <string name="central_nervous_system">Central nervous system</string>
+    <string name="ankle">Ankle :</string>
+    <string name="knee">Knee :</string>
+    <string name="plantar">Plantar :</string>
+    <string name="supinator">Supinator :</string>
+    <string name="triceps">Triceps :</string>
+    <string name="biceps">Biceps :</string>
+    <string name="corneal">Corneal :</string>
+    <string name="reflexes">Reflexes</string>
+    <string name="sensory">Sensory :</string>
+    <string name="right_lower_limb">Right Lower Limb :</string>
+    <string name="left_lower_limb">Left Lower Limb :</string>
+    <string name="right_upper_limb">Right Upper Limb :</string>
+    <string name="left_upper_limb">Left Upper Limb :</string>
+    <string name="power">Power</string>
+    <string name="tone">Tone :</string>
+    <string name="bulk">Bulk :</string>
+    <string name="cognitive_function">Cognitive Function :</string>
+    <string name="allergic_to">Allergic To</string>
+    <string name="allergic_to_others">Allergic To Other</string>
+    <string name="disease_relationship">Disease/Relationship</string>
+    <string name="tprevious_surgery">\tPrevious Surgery</string>
+    <string name="patient_medicine_history">Patient Medicine History</string>
+    <string name="name">Name</string>
+    <string name="mobile_no1">Mobile No1:</string>
+    <string name="mobile_no2">Mobile No2:</string>
+    <string name="search_vaccine">Search Vaccine..</string>
+    <string name="vaccine_not_taken">Vaccine Not Taken</string>
+    <string name="vaccine_taken">Vaccine Taken</string>
+    <string name="daily_consulation_report">Daily Consulation Report</string>
+    <string name="reports">Reports</string>
+    <string name="diet_plan">Diet Plan</string>
+    <string name="admission_details">Admission details</string>
+    <string name="ward">Ward</string>
+    <string name="room_no">Room No</string>
+    <string name="bed_no">Bed No</string>
+    <string name="admitted_date">Admitted date </string>
+    <string name="admitted_time">Admitted time </string>
+    <string name="select_date">Select date</string>
+    <string name="search">Search</string>
+    <string name="add_inpatient_details">Add Inpatient Details</string>
+    <string name="i_p_chart">I.P.CHART</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="visited_doctor">Visited Doctor</string>
+    <string name="drug_order">Drug Order</string>
+    <string name="nursing_instrutions">Nursing Instrutions</string>
+    <string name="diabetic_chart">Diabetic Chart</string>
+    <string name="urine_sugar">Urine Sugar</string>
+    <string name="lente">Lente</string>
+    <string name="insulin_plain">Insulin Plain</string>
+    <string name="ketone_bodies">Ketone Bodies</string>
+    <string name="temperature_chart">Temperature Chart</string>
+    <string name="temperature_range">Temperature Range</string>
+    <string name="visit_summary">Visit Summary</string>
+    <string name="taken_time">Taken Time</string>
+    <string name="clinical_notes">Clinical Notes</string>
+    <string name="treatment_and_diet">Treatment and Diet</string>
+    <string name="medical_prescription">Medical Prescription</string>
+    <string name="inpatient_chart">Inpatient chart</string>
+    <string name="input_chart">Input Chart</string>
+    <string name="output_chart">Output Chart</string>
+    <string name="surgery_record">Surgery Record</string>
+    <string name="ward_ward_a_nroom_no_201_nbed_no_t1">Ward:\nRoom No: \nBed No: </string>
+    <string name="bp_systolic">BP Systolic</string>
+    <string name="bp_diastole">BP Diastole</string>
+    <string name="pulse_per_minute">Pulse (per minute)</string>
+    <string name="resp_per_minute">Resp (per minute)</string>
+    <string name="nursing_instrutions_res">Nursing Instructions</string>
+    <string name="enter_the_nursing_instrutions">Enter the Nursing Instructions</string>
+    <string name="input_1">Input</string>
+    <string name="oral_1">Oral</string>
+    <string name="fluids_2">Fluids</string>
+    <string name="output_1">Output</string>
+    <string name="rvles_1">Rvles</string>
+    <string name="motion_1">Motion</string>
+    <string name="urine_1">Urine</string>
+    <string name="medical_case_record">Medical Case Record</string>
+    <string name="close">Close</string>
+    <string name="operation_report">Operation Report</string>
+    <string name="delte">Delete</string>
+    <string name="new_patient_register">Patient Register</string>
+    <string name="specialist_referral_report">Specialist Referral Report</string>
+    <string name="pharmacy_referral_report">Pharmacy Referral Report</string>
+    <string name="diagnostic_centre_referral_report">Diagnostic Centre Referral Report</string>
+    <string name="ecg_summary_details">ECG Summary Details</string>
+    <string name="ppbs">PPBS</string>
+    <string name="fbs">FBS</string>
+    <string name="patient_name">Patient Name :</string>
+    <string name="interval">Interval</string>
+    <string name="duration">Duration</string>
+    <string name="previous">Previous</string>
+    <string name="patient_medical_report">Patient Medical Report</string>
+    <string name="patient_query">Patient Query</string>
+    <string name="your_reply">Your reply</string>
+    <string name="reject">Reject</string>
+    <string name="send_reply">Send Reply</string>
+    <string name="prescription_template_customization">Prescription Template Customization</string>
+    <string name="template_no">Template No:</string>
+    <string name="_0">0</string>
+    <string name="template_name">Template Name</string>
+    <string name="all">All</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="night">Night</string>
+    <string name="after_food">After Food</string>
+    <string name="before_food">Before Food</string>
+    <string name="with_food">With Food</string>
+    <string name="add_drug">Add Drug</string>
+    <string name="save_templates">Save Templates</string>
+    <string name="available_on">Available on</string>
+    <string name="monday">Monday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="consultation_hours">Consultation Hours</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="vaccination_name">Vaccination Name :</string>
+    <string name="vaccine_schedule">Vaccine Schedule :</string>
+    <string name="given_on">Given On :</string>
+    <string name="prescription_templates">Prescription Templates</string>
+    <string name="clear">Clear</string>
+    <string name="internet_connectivity_status">Internet connectivity status</string>
+    <string name="server_connectivity_status">Server connectivity status</string>
+    <string name="clinical_information">Clinical Information</string>
+    <string name="medicine_template">Medicine Template</string>
+    <string name="enter_template_name">Enter Template Name:</string>
+    <string name="ex_for_fever">EX : For Fever</string>
+    <string name="age_gender">Age / Gender</string>
+    <string name="treatment">Treatment</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="exit">Exit</string>
+    <string name="operation_name">Operation Name</string>
+    <string name="date_time_of_operation">Date/Time of operation</string>
+    <string name="operation_remarks">Operation Remarks</string>
+    <string name="online_consultation">Online Consultation</string>
+    <string name="conduction_defects">Conduction defects</string>
+    <string name="scan_for">Scan for</string>
+    <string name="test_name">Test Name</string>
+    <string name="subtest_name">Subtest Name</string>
+    <string name="test_values">Test Values</string>
+
+
+    <string name="test_units">Unit</string>
+    <string name="test_normalrange">Normal Range</string>
+
+    <string name="sample">sample</string>
+    <string name="update">Update</string>
+    <string name="online_patient">Online Patient</string>
+    <string name="welcome_to_mobydoctor">Welcome To MobyDoctor!</string>
+    <string name="welcometo_mobydoctor">Welcome To MobyDoctor!</string>
+    <string name="cloud_data_synchronization_pending_enable_your_data_connection">cloud data synchronization pending.. Enable your data connection</string>
+    <string name="total">Total :</string>
+    <string name="previous_medicine_info">Previous Medicine Info</string>
+    <string name="pin_number">Pin Number</string>
+    <string name="report_upload">Report Upload</string>
+    <string name="pending_data">Pending data</string>
+    <string name="count">Count</string>
+    <string name="patient_registration">Patient Registration</string>
+    <string name="immunization">Immunization</string>
+    <string name="select_immunization">Select Immunization</string>
+    <string name="other_medical_history">Other Medical History</string>
+    <string name="past_illness_details">Past Illness details</string>
+    <string name="kyphosis">Kyphosis</string>
+    <string name="scoliosis">Scoliosis</string>
+    <string name="dysuria">Dysuria</string>
+    <string name="pyuria">Pyuria</string>
+    <string name="haematuria">Haematuria</string>
+    <string name="oliguria">Oliguria</string>
+    <string name="polyuria">Polyuria</string>
+    <string name="anuria">Anuria</string>
+    <string name="nocturia">Nocturia</string>
+    <string name="urethral_discharge">Urethral discharge</string>
+    <string name="prostate">Prostate</string>
+    <string name="dysphasia">Dysphasia</string>
+    <string name="aphasia">Aphasia</string>
+    <string name="bruit_present">Bruit Present</string>
+    <string name="bruit_absent">Bruit Absent</string>
+    <string name="impaired">Impaired</string>
+    <string name="left_upper_limb_t_t">Left Upper Limb\t\t</string>
+    <string name="_5_5">5/5</string>
+    <string name="right_upper_limb_t">Right Upper Limb\t</string>
+    <string name="left_lower_limb_t_t">Left Lower Limb\t\t</string>
+    <string name="right_lower_limb_t">Right Lower Limb\t</string>
+    <string name="symmetry">Symmetry</string>
+    <string name="smooth_movement">Smooth movement</string>
+    <string name="arms_swing">Arms strong</string>
+    <string name="pelvic_tilt">Pelvic tilt</string>
+    <string name="stride_length">Stride length</string>
+    <string name="cervical_lordosis">Cervical Lordosis</string>
+    <string name="lumbar_lordosis">Lumbar Lordosis</string>
+    <string name="swelling">Swelling</string>
+    <string name="deformity">Deformity</string>
+    <string name="limb_shortening">Limb shortening</string>
+    <string name="muscle_wasting">Muscle wasting</string>
+    <string name="select">Select</string>
+    <string name="visible_peristalsis">Visible Peristalsis</string>
+    <string name="orifices">Orifices</string>
+    <string name="free">Free</string>
+    <string name="bowel_sounds">Bowel Sounds :</string>
+    <string name="organomegely_n">Organomegely</string>
+    <string name="pallorness">Pallorness</string>
+    <string name="thyroid">Thyroid</string>
+    <string name="face_puffiness">Face Puffiness</string>
+    <string name="jaundice">Jaundice</string>
+    <string name="s1">S1</string>
+    <string name="s2">S2</string>
+    <string name="s3">S3</string>
+    <string name="s4">S4</string>
+    <string name="systolic">Systolic</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="pericardial_rub">Pericardial Rub :</string>
+    <string name="regular">Regular</string>
+    <string name="irregular">Irregular</string>
+    <string name="select_endocrine">Select endocrine</string>
+    <string name="choose">Choose</string>
+    <string name="comment">comment</string>
+    <string name="immunization_history">Immunization History</string>
+    <string name="patient_reports">Patient Reports</string>
+    <string name="forgot_passowrd">Forgot Password</string>
+    <string name="enter_your_verification_code">Enter your verification code :</string>
+    <string name="resend">Resend</string>
+    <string name="user_id">User Id :</string>
+    <string name="title">Title</string>
+    <string name="operation_name_appendicitis_operation">Operation Name - Appendicitis operation</string>
+
+    <string name="system">System</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="company">Company</string>
+    <string name="dosage">Dosage</string>
+    <string name="pan">PAN</string>
+    <string name="clinic_details">Clinic Details</string>
+    <string name="onlin_consultations">Online Consultations</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="herewith_i_refer_the_above_patient_with_complaints_of_the_above_symptoms_for_your_expert_opinion_and_management">Herewith I refer the above patient with complaints of the above symptoms for your expert opinion and management.</string>
+    <string name="sorry_we_regret_to_know_that_you_have_lost_your_device">Sorry, We regret to know that you have lost your device</string>
+    <string name="undert_care_of">Under care of *</string>
+    <string name="student">Student *</string>
+    <string name="student_name">Enter student name</string>
+    <string name="final_diagnosis">Final Diagnosis *</string>
+    <string name="select_result">Select Result *</string>
+    <string name="notes">Notes</string>
+    <string name="pre_operative_diagnosis">Pre Operative Diagnosis</string>
+    <string name="operative_notes">Operative Notes</string>
+    <string name="position">Position</string>
+    <string name="procedure">Procedure</string>
+    <string name="closure">Closure</string>
+    <string name="post_operative_diagnosis">Post Operative Diagnosis</string>
+    <string name="surgeon">Surgeon</string>
+    <string name="anaesthetist">Anaesthetist</string>
+    <string name="asst">Asst</string>
+    <string name="blood_loss">Blood Loss</string>
+    <string name="histo_pathological_diagnosis">Histo Pathological Diagnosis</string>
+    <string name="post_op_instruction">Post Op Instruction</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="visited_date">Visited Date</string>
+    <string name="professional_charges">Professional Charges</string>
+    <string name="select_temperature">Select Temperature</string>
+    <string name="special_instruction">Special Instruction</string>
+    <string name="indications_and_dosage">Indications and Dosage</string>
+    <string name="drug_generic">Drug Generic</string>
+    <string name="chemical_name">Chemical Name</string>
+    <string name="pharma">Pharma</string>
+    <string name="composition">Composition</string>
+
+    <string name="pre_operation_diagnosis">Pre-Operation Diagnosis</string>
+    <string name="operation_notes">Operation notes</string>
+    <string name="closure_values">Closure</string>
+    <string name="post_operative_diagnosis_values">Post operative diagnosis</string>
+    <string name="post_operative_instruction">Post operative instruction</string>
+    <string name="inpatient_details">Inpatient details</string>
+    <string name="total_records">Total Records :</string>
+    <string name="diet_list_new">Diet List</string>
+
+
+    <string name="register_mobile_no">Registered Mobile No.</string>
+    <string name="tuesday">Tuesday</string>
+
+
+    <string name="information">Information</string>
+    <string name="weight_kg_new">Weight(Kg)</string>
+
+
+    <string name="preview_print_pdf">Preview &amp; Print Pdf</string>
+    <string name="email_pdf">Email Pdf</string>
+    <string name="prescription_save_sucess">Prescription Saved Successfully</string>
+
+
+    <!--
+        <string name="bai_rukminibai_hospital_dispensary_kalyan">Mahan Pharmacy, </string>
+        <string name="laboratory">Mahan Laboratory,Anna nagar, Chennai,Phone No-2316324 - 2320202.</string>
+        <string name="bai_rukiminibai_hospital_kalyan_west_n_phone_no_2316324_2320202">Mahan Hospital,Chennai,\n Phone No-2316324 - 2320202</string>
+    -->
+
+
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="prescription_template">Prescription Templates</string>
+    <string name="pref_med_list">My Preferred Medicine List</string>
+    <string name="pref_test_list">My Preferred Test List</string>
+
+
+    <string name="today_appointment">Show today appointment</string>
+    <string name="upcoming_patient">Upcoming Patient</string>
+    <string name="refresh">Refresh</string>
+    <string name="runtime_permissions_txt">Please enable ALL permissions from app settings.</string>
+    <string name="preparing_txt">Verifying Login Credentials</string>
+
+
+    <string name="patient_info">Patient Info</string>
+    <string name="casenotes">Case Notes</string>
+    <string name="patient_uploaded_reports">Patient Uploaded Reports</string>
+
+
+    <string name="district_title">District:</string>
+
+
+    <string name="str_login">Login</string>
+    <string name="str_welcome_to_mobydoctor">Welcome to Mobydoctor</string>
+    <string name="lbl_Casenotes">Case Notes</string>
+    <string name="breath_sound_txt">Breath Sound</string>
+    <string name="visible_pulsations_txt">Visible Pulsations</string>
+    <string name="abdominal_palpation_txt">Abdominal Palpation</string>
+    <string name="bowel_sounds_txt">Bowel sounds</string>
+    <string name="patient_id">Patient Id</string>
+    <string name="report_type">Report Type</string>
+    <string name="upload_report">Upload Report</string>
+    <string name="report_details">Report Details</string>
+    <string name="enter_report_details_txt">Enter Report Details</string>
+    <string name="file_path">File Path</string>
+    <string name="browse_txt">Browse</string>
+    <string name="bpph">Blood Pressure Previous History</string>
+    <string name="bsph">Blood Sugar Previous History</string>
+    <string name="bwph">Body Weight Previous History</string>
+    <string name="bpph_txt">Blood Pressure Previous History</string>
+    <string name="patient_photo_txt">Patient Photo</string>
+    <string name="popup_medical">Select Medical History</string>
+    <string name="popup_allergic">Select Allergic To</string>
+    <string name="popup_hereditary">Select Hereditary Diseases</string>
+    <string name="popup_academic">Select Academic Qualification</string>
+    <string name="popup_specialization">Select Specialization</string>
+    <string name="str_information">Information</string>
+    <string name="skip_message">Are you sure you want to skip to investigation?</string>
+    <string name="missing">check for missing &amp; valid Data</string>
+    <string name="saved_success_prescription">Prescription Information - Saved Successfully</string>
+    <string name="saved_success_prescription_noconnectivity">Prescription Information - Saved Successfully\nUnable to connect with server - view pdf later from mypatient patient profile</string>
+
+    <string name="str_endocrine">Select Endocrine</string>
+    <string name="delete_confirmation">Delete Confirmation</string>
+    <string name="do_you_want_to_delete">Do you want to Delete?</string>
+    <string name="no_data">No data available</string>
+    <string name="select_patientname">Select Patient Name…</string>
+    <string name="total_no">Total No of Test :</string>
+    <string name="select_scan_type">Select Scan Type</string>
+    <string name="required">Required</string>
+    <string name="selected_item">Selected Item (</string>
+    <string name="already_added">) Already Added…</string>
+    <string name="test_skip">Select any test if required, or Click Skip....</string>
+    <string name="no_emailid">No Email Id found for this patient</string>
+    <string name="email_again">and click email pdf again</string>
+    <string name="email_sent">Email Sent Successfully…</string>
+    <string name="medicine_template_txt">Medicine Template</string>
+    <string name="select_duration">Select Duration</string>
+    <string name="add_medicine_details">Add Medicine Details</string>
+    <string name="open_pdf">Open Medicine Prescription Pdf (Or) Click Back To Exit This Dialog</string>
+    <string name="no_pdf">No PDF Viewer Installed</string>
+    <string name="template_saved">Medicine Template Saved Successfully</string>
+    <string name="add_medicines">Add Medicine Details</string>
+    <string name="press_again_cancel">Press again to cancel…</string>
+    <string name="select_medicine">Selected Medicine Already Added…</string>
+    <string name="preferred_pharmacy_details">Preferred pharmacy details</string>
+    <string name="selec_specliz">Select Specialization</string>
+    <string name="open_referral_pdf">Open Doctor Referral Personal Pdf (Or) Click Back To Exit This Dialog</string>
+    <string name="content_treatment">Herewith I refer the above Patient with complaints of the above symptoms for your expert opinion and management.</string>
+    <string name="total_records_txt">Total Records : </string>
+    <string name="no_details">No details found for your search criteria!</string>
+    <string name="please_wait_drug">Please wait Drug Information loading..</string>
+
+
+    <!--Drug Directory -->
+    <string name="category_txt">CATEGORY</string>
+    <string name="chemical_name_txt">CHEMICAL NAME</string>
+    <string name="brand_name_txt">BRAND NAME</string>
+    <string name="pharma_txt">PHARMA</string>
+    <string name="composition_txt">COMPOSITION</string>
+    <string name="dosage_txt">DOSAGE</string>
+    <string name="medicine_intake_type_txt">MEDICINE INTAKE TYPE</string>
+    <string name="units_per_pack_txt">UNITS PER PACK</string>
+    <string name="post_food">Post Food</string>
+    <string name="remarks_txt">Remarks</string>
+    <string name="title_mypatient_appointment">My Patients - Today Patient List</string>
+    <string name="refreshing">Please wait refreshing patient list…</string>
+    <string name="close_online">Close Online Patient</string>
+    <string name="close_online_txt">Are you sure want to close this patient ?</string>
+    <string name="lab_test_report">Lab Test Report</string>
+    <string name="for_more_details">For more details…</string>
+
+
+    <!--Patient Profile-->
+    <string name="txt_patients_details">Patients Details</string>
+    <string name="txt_patient_id">Patient Id</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_father_name">Father Name</string>
+
+    <string name="txt_spouse">Spouse</string>
+    <string name="txt_date_of_birth">Date of Birth</string>
+    <string name="txt_age">Age</string>
+    <string name="txt_gender">Gender</string>
+    <string name="txt_blood_group">Blood Group</string>
+    <string name="txt_caste">Caste</string>
+    <string name="txt_patients_address">Patients Address</string>
+    <string name="txt_address1">Address1</string>
+    <string name="txt_address2">Address2</string>
+    <string name="txt_state">State</string>
+    <string name="txt_city">City</string>
+    <string name="txt_country">Country</string>
+    <string name="txt_pincode">Pincode</string>
+    <string name="txt_mobile_no1">Mobile No1</string>
+    <string name="txt_mobile_no2">Mobile No2</string>
+
+    <string name="txt_care_taker_details">Care taker details</string>
+    <string name="txt_care_take_dependentname">Care-taker / Dependent Name</string>
+    <string name="txt_contact_number">Contact Number</string>
+    <string name="txt_relationship">Relationship</string>
+    <string name="txt_insurance_details">Insurance details</string>
+    <string name="txt_policy_name">Policy Name</string>
+    <string name="txt_nameoftheinsurancecompany">Name of the Insurance company</string>
+    <string name="txt_amount_insured">Amount Insured</string>
+    <string name="txt_validity">Validity</string>
+    <string name="txt_authorised_hospitals">Authorised Hospitals</string>
+    <string name="txt_other_details">Other details</string>
+    <string name="txt_fee_exemption">Fee Exemption</string>
+    <string name="txt_fee_exemption_category">Fee Exemption Category</string>
+    <string name="txt_bpl_card_no">BPL Card No</string>
+    <string name="txt_aadhar_card_no">Aadhar Card No</string>
+    <string name="txt_fee_exemption_reason">Fee Exemption Reason</string>
+    <string name="txt_income">Income</string>
+    <string name="txt_occupation">Occupation</string>
+    <string name="txt_referred_by">Referred By</string>
+    <string name="options">Options</string>
+    <string name="patient_name_patient_id">Patient Name / Patient Id</string>
+    <string name="prev_med_history">Previous Medical History</string>
+    <string name="hereditary_diseases_others">Hereditary Diseases Others</string>
+    <string name="cartoid">Cartoid</string>
+    <string name="casenotes_loaded_successfully">Casenotes loaded successfully..</string>
+    <string name="verifying_credentials">Verifying Credential</string>
+    <string name="pleasewait_checking">Please wait…checking login information</string>
+    <string name="please_wait">Please wait</string>
+    <string name="txt_processing">Processing</string>
+    <string name="inpatient_summary">Inpatient Summary</string>
+    <string name="requeste_sent_discharge">Discharge request sent Successfully</string>
+    <string name="reportimages">report_images</string>
+    <string name="test">Test</string>
+    <string name="scan">Scan</string>
+    <string name="resultvalue">Result Value</string>
+    <string name="test_result">Result</string>
+    <string name="prev_med_history_loaded">Please wait previous medicine history loading..</string>
+    <string name="prescription_profile_success">Prescription Profile loaded successfully..</string>
+    <string name="operation_details">Operation Details</string>
+    <string name="operationdate">Operation Date</string>
+    <string name="from_time">From Time</string>
+    <string name="to_time">To TIme</string>
+    <string name="prescription_details">Prescription Details</string>
+    <string name="operation_procedure">Operation Procedure</string>
+    <string name="pst_diagnosis">Post Operative Diagnosis</string>
+    <string name="post_operative_instruction_txt">Post Operative Instruction</string>
+    <string name="report_name">Report Name</string>
+    <string name="response_send">Response send successfully to patient</string>
+    <string name="reject_consultation">Are you sure want to reject this consultation</string>
+    <string name="my_preferred_n_medicine_list">My Preferred   Medicine List</string>
+    <string name="my_preferred_n_test_list">My Preferred   Test List</string>
+    <string name="test_name_mandatory">Test Name *</string>
+    <string name="sub_test_name_mandatory">Sub Test Name *</string>
+    <string name="add_test">Add Test</string>
+    <string name="content_cloud">The above listed data has not been synched with the cloud server as internet connection is not available. We highly recommend you to connect to the internet and synchronize your device with cloud server.</string>
+    <string name="noofpatient">No. of patients:</string>
+    <string name="request_placed">Request placed successfully</string>
+    <string name="valid_patient_details">Please enter valid Patient details</string>
+    <string name="pl_select_patient">Please select patient</string>
+    <string name="refresh_txt">Refresh..</string>
+    <string name="admit_patient_request">Admit Patient Request</string>
+    <string name="request_remarks">Request Remarks *</string>
+    <string name="enter_request_remarks_txt">Enter request remarks</string>
+    <string name="nodata">No data available</string>
+    <string name="add_inpatient_details_txt">Add InPatient Details</string>
+    <string name="add_diet_details">Add Diet Details</string>
+    <string name="close_txt">Close</string>
+    <string name="caretaker_number">Caretaker Number</string>
+    <string name="casenotes_saved">CaseNotes Details - Saved Successfully</string>
+
+
+    <string name="caretaker">Caretaker</string>
+    <string name="visitsummary">Visit Summary</string>
+    <string name="operativenotes">Operative notes</string>
+    <string name="bloodloss">Blood Loss</string>
+
+    <string name="roomnumber">Room Number</string>
+    <string name="patientdetails">Patient details</string>
+
+    <string name="i.pchart">IP Chart</string>
+    <!--PDF PONNUSAMY-->
+
+
+    <string name="smoothmovement">Smooth movement</string>
+
+    <string name="report_blood">Reports - Examination of blood</string>
+    <string name="report_stool">Reports - Stool</string>
+    <string name="report_urine">Reports - Urine</string>
+
+    <string name="report_anc">Reports - ANC</string>
+    <string name="report_hiv">Reports - HIV</string>
+
+
+    //All test reports
+
+    //anc test report
+    <string name="test_report_urine_examination">URINE EXAMINATION</string>
+    <string name="test_report_haemoglobin">Haemoglobin</string>
+    <string name="test_report_blood_group">Blood Group (Rh)</string>
+    <string name="test_report_physical">A) Physical </string>
+    <string name="test_report_chemical">B) Chemical </string>
+    <string name="test_report_colour">Colour</string>
+    <string name="test_report_albumin">Albumin</string>
+    <string name="test_report_appearance">Appearance</string>
+    <string name="test_report_sugar">Sugar</string>
+
+
+    <string name="test_report_epithelial_cells">Epithelial Cells</string>
+    <string name="test_report_amarphous_matenal">Amarphous Matenal</string>
+    <string name="test_report_pus_cells">Pus Cells</string>
+    <string name="test_report_trichomonas_vaginalls">Trichomonas Vaginalls</string>
+    <string name="test_report_red_cells">Red  Cells</string>
+    <string name="test_report_casts">Casts</string>
+    <string name="test_report_yeast_cells">Yeast Cells</string>
+    <string name="test_report_crystals">Crystals</string>
+    <string name="test_report_bacteria">Bacteria</string>
+    <string name="test_report_australia_antigen">Australia Antigen Test is :</string>
+    <string name="test_report_upt">UPT is(Byeliza Method) :</string>
+
+    <string name="test_report_microscope">C) Microscopic</string>
+
+
+    //examination of blood
+    <string name="test_report_complete_blood_count">Complete Blood Count (CBC)</string>
+    <string name="test_report_hemoglobin">Hemoglobin(Hb)</string>
+    <string name="test_report_packed_cell_volume">Packed Cell Volume</string>
+    <string name="test_report_total_count">Total Count</string>
+    <string name="test_report_rbc_count">RBC Count</string>
+    <string name="test_report_differential_count">Differential Count</string>
+    <string name="test_report_polymorphs">Polymorphs</string>
+    <string name="test_report_lymphocytes">Lymphocytes</string>
+    <string name="test_report_eosinophilis">Eosinophilis</string>
+    <string name="test_report_monocytes">Monocytes</string>
+    <string name="test_report_basophils">Basophils</string>
+    <string name="test_report_band_form">Band Form</string>
+    <string name="test_report_platelets_count">Platelets Count</string>
+    <string name="test_report_method_westergen">Method:Westergen</string>
+    <string name="test_report_widal_test">WIDAL TEST</string>
+
+
+    //HIV reprot
+
+
+    //Stool report
+
+
+    //Urine report
+
+
+    <string name="profile_stool_physicalexamination">PHYSICAL EXAMINATION</string>
+    <string name="profile_stool_colour">Colour</string>
+    <string name="profile_stool_blood">Blood</string>
+    <string name="profile_stool_consistency">Consistency</string>
+    <string name="profile_stool_parasites">Parasites (Adult)</string>
+    <string name="profile_stool_mussus">Musus</string>
+    <string name="profile_stool_chemialexam">CHEMICAL EXAMINATION</string>
+    <string name="profile_stool_occultblood">Occult blood test</string>
+    <string name="profile_stool_mircrospicexam">MICROSCOPIC EXAMINATION</string>
+    <string name="profile_stool_cpicells">Cpi cells</string>
+    <string name="profile_stool_puscells">Pus cells</string>
+    <string name="profile_stool_vege">Vegetative forms</string>
+    <string name="profile_stool_redblood">Red blood cells</string>
+    <string name="profile_stool_protozoa">Protozoa</string>
+    <string name="profile_stool_macrophages">Macrophages</string>
+    <string name="profile_stool_flagellates">Flagellates</string>
+    <string name="profile_stool_fat">Fat</string>
+    <string name="profile_stool_cyst">Cyst</string>
+    <string name="profile_stool_starch">Starch</string>
+    <string name="profile_stool_ova">Ova</string>
+    <string name="profile_stool_undigested">Undigested food matter</string>
+    <string name="profile_stool_larvae">Larvae</string>
+    <string name="profile_stool_anyother">Any other finding</string>
+    <string name="profile_stool_result">Result</string>
+
+
+    <string name="profile_hiv_hivtestreport">HIV TEST REPORT</string>
+    <string name="profile_hiv_surname">Surname</string>
+    <string name="profile_hiv_firstname">First Name</string>
+    <string name="profile_hiv_middlename">Middle Name</string>
+    <string name="profile_hiv_gender">Gender</string>
+    <string name="profile_hiv_age">Age</string>
+    <string name="profile_hiv_pid">PID</string>
+    <string name="profile_hiv_labid">Lab ID</string>
+    <string name="profile_hiv_dateandtimeblood">Date and time blood drawn:</string>
+    <string name="profile_hiv_testdetails">Test Details:</string>
+    <string name="profile_hiv_speimenttype">Specimen type used for testing: Serum / Plasa / Whole Blood</string>
+    <string name="profile_hiv_dateandtimespeciment">Date and time speciment tested</string>
+    <string name="profile_hiv_note">Note</string>
+    <string name="profile_hiv_columnand">Column  and 3 to be filed only when HIV 1 &amp; 2 anibody sicriminatory test(s) used</string>
+    <string name="profile_hiv_nocell">No cell has to be left blank; indicate as NA where not applicable</string>
+    <string name="profile_hiv_differentialcount">Differential Count </string>
+    <string name="profile_hiv_nameofhiv">Name of HIV test KIT</string>
+    <string name="profile_hiv_batchno">Batch No.</string>
+    <string name="profile_hiv_expdate">Exp. Date</string>
+    <string name="profile_hiv_hiv1antibodies">Reactive/Nonreactive (R/NR)\nfor HIV 1 antibodies</string>
+    <string name="profile_hiv_hiv2antibodies">Reactive/Nonreactive (R/NR)\nfor HIV 2 antibodies</string>
+    <string name="profile_hiv_hiv3antibodies">Reactive/Nonreactive (R/NR)\nfor HIV 3antibodies</string>
+    <string name="profile_hiv_test">Test</string>
+    <string name="profile_hiv_interpretation">Interpretation of the result : Tick (True) Relevant</string>
+    <string name="profile_hiv_negative_hiv_antibodies">Specimen is negative for HIV anti bodies</string>
+    <string name="profile_hiv_positive_hiv_1_antibodies">Specimen is positive for HIV-1 antibodies</string>
+    <string name="profile_hiv_positive_hive1_hiv">Specimen is positive for HIV anti bodies (HIV 1 and HIV 2; or HIV 1 alone)</string>
+    <string name="profile_hiv_specimenisdeterminate">Specimen is determinate for HIV anti bodies , Collect fresh sample in two weeks.</string>
+
+
+    <string name="profile_urine_physicalexam">PHYSICAL EXAMINATION</string>
+    <string name="profile_urine_quantity">Quantity</string>
+    <string name="profile_urine_sediment">Sediment</string>
+    <string name="profile_urine_colour">Colour</string>
+    <string name="profile_urine_specificgravity">Specific Gravity</string>
+    <string name="profile_urine_appearance">Appearance</string>
+    <string name="profile_urine_phreaction">PH Reaction</string>
+    <string name="profile_urine_acetone">Acetone</string>
+    <string name="profile_urine_proteins">Proteins</string>
+    <string name="profile_urine_bitesalf">Bite Salf</string>
+    <string name="profile_urine_sugar">Sugar (Benedict\'s Test)</string>
+    <string name="profile_urine_bitepigment">Bite Pigment</string>
+    <string name="profile_urine_occultblood">Occult blood</string>
+    <string name="profile_urine_microscopic">MICROSCOPIC EXAMINATION</string>
+    <string name="profile_urine_epithellial">Epithellial Cells</string>
+    <string name="profile_urine_amorphous">Amorphous Material</string>
+    <string name="profile_urine_puscells">Pus Cells</string>
+    <string name="profile_urine_trichomansvaginalls">Trichomans Vaginalls</string>
+    <string name="profile_urine_redblood">Red Blood Cells</string>
+    <string name="profile_urine_casts">Casts</string>
+    <string name="profile_urine_anyother">Any Other Finding</string>
+    <string name="operation_notifications">Operation - Notifications</string>
+    <string name="doctorss">Doctor(s)  :</string>
+    <string name="assistants">Assistant(s) :</string>
+
+    <string name="patientmedicinehistory">Patient Medicine History</string>
+
+
+    <string name="search_patient_online">Search Patient Online</string>
+    <string name="entervalue">Enter Any Patient Details</string>
+    <string name="already_patient_available">Already Patient is Available....</string>
+    <string name="patient_pin">Patient Pin</string>
+    <string name="choose_ward">Choose ward category *</string>
+    <string name="txt_emergency_dtls">Emergency/Causality</string>
+    <string name="dental_system">Dental System</string>
+    <string name="breath_sound_equal">Is Breath Sound Equal</string>
+    <string name="breath_sound_options">Breath sound not equal</string>
+    <string name="pnc_system">PNC System</string>
+    <string name="pnc_expn">POST NATAL CARE</string>
+    <string name="signs">Signs</string>
+    <string name="txt_submit_nxt"><![CDATA[Submit & Next]]></string>
+    <string name="skipped_toinvestigation">Skipped to investigation</string>
+
+    <string name="success_message_clinical">Clinical Information Saved Successfully..</string>
+    <string name="success_message_patient_registration">Patient Registration Saved Successfully..</string>
+    <string name="pdfreports">PDF Reports</string>
+    <string name="str_signout_msg">Are you sure want to signout?</string>
+
+
+    <string name="Query_Casenotes">SELECT A.id as A_ID, A.Actdate, A.IsActive, A.pagegen, A.Isupdate, A.Anaemic, A.Icterus, A.Stenosis, A.Clubbing, A.Limbphantom, A.Vericoveins, A.Pedal_edema, A.built, A.extra_generalexam, A.HID, A.IsUpdateMax, A.ServerId, A.skin_infection, A.short_stat, A.pog, A.pallor, A.oedema, A.fundalheight, A.lie, A.fetalmovement, A.fetalheight, A.pv, A.anycompl, A.DiagId, B.id as B_ID, B.Breathsound, B.Trachea, B.Kyphosis_Scoliosis, B.Crepitation, B.Bronchi, B.Pulserate  as B_Pulserate, B.Note, B.shapeofchest, B.spo2, B.BreathSoundEqual, B.BreathSoundEqualOptions,B.Isupdate as B_Isupdate, C.id as C_ID, C.Beat, C.Murmur, C.Pericardial_Rub, C.Pulserate as C_Pulserate, C.heartrate,C.Isupdate as C_Isupdate, E.id as E_ID, E.Abdomen, E.Bowelsound, E.Spleen, E.Liver, E.PalpableMasses, E.Hernial, E.shapeofabdomen, E.Visible_Pulsations, E.Visual_Peristalsis, E.Abdominal_Palpation, E.Splenomegaly, E.Hepatomegaly, E.organomegely, E.freefuild, E.distension, E.tenderness, E.scrotum,E.Isupdate as E_Isupdate, F.id  as F_ID, F.Pupilsize, F.Speech, F.Carodit, F.Amnesia, F.Apraxia, F.Cognitive_Function, F.Bulk, F.Tone, F.Power_LUL, F.Power_RUL, F.Power_LLL, F.Power_RLL, F.Sensory, F.Reflexes_Corneal, F.Reflexes_Biceps, F.Reflexes_Triceps, F.Reflexes_Supinator, F.Reflexes_Knee, F.Reflexes_Ankle, F.Reflexes_Plantor, F.congentail_abnormality, F.mentalstatus,F.Isupdate as F_Isupdate, G.id as G_ID, G.oriented, G.neckrigidity, G.confused, G.exaggerated, G.extensor, G.gsscore, G.incomprehensible, G.depressed, G.flexor, G.coma,G.Isupdate as G_Isupdate, H.id  as H_ID, H.symmetry, H.smooth_movement, H.arms_swing, H.pelvic_tilt, H.stride_length, H.cervical_lordosis, H.lumbar_lordosis, H.kyphosis, H.scoliosis, H.llswelling, H.lldeformity, H.lllimbshortening, H.llmuscle_wasting, H.llremarks, H.ulswelling, H.uldeformity, H.ullimbshortening, H.ulmuscle_wasting, H.ulremarks,H.Isupdate as H_Isupdate, I.id  as I_ID, I.Othersystem, I.AdditionalInfo,I.Isupdate as I_Isupdate, J.id  as J_ID, J.Heamoglobin, J.wbc, J.rbc, J.polymorphs, J.lymphocytes, J.monocytes, J.cl, J.basophils, J.eosinophils, J.esr, J.urea, J.creatinine, J.NA, J.K, J.HCO3, J.UricAcid, J.Sodium, J.Potassium, J.Chloride, J.Bicarbonate, J.TotalCholesterol, J.LDL, J.HDL, J.VLDL, J.Triglycerides, J.Serumbilirubin, J.Direct, J.Indirect, J.Totalprotein, J.Albumin, J.Globulin, J.SGOT, J.SGPT, J.AlkalinePhosphatase, J.FreeT3, J.FreeT4, J.TSH,J.Isupdate as J_Isupdate, K.id  as K_ID, K.dysuria, K.pyuria, K.haematuria, K.oliguria, K.polyuria, K.anuria, K.nocturia, K.urethraldischarge, K.prostate,K.Isupdate as K_Isupdate, L.id  as L_ID, L.Endocrine,L.Isupdate as L_Isupdate, M.id  as M_ID, M.pnc_details, M.ppc_details, M.cob_details,M.Isupdate as M_Isupdate, N.Id  as N_ID, N.upper_right_jaw, N.upper_left_jaw, N.lower_right_jaw, N.lower_left_jaw, N.dental_sys,N.Isupdate as N_Isupdate FROM Diagonis AS MAIN LEFT JOIN CaseNote_GeneralExamination AS A ON MAIN.DiagId = A.DiagId and  (A.Isupdate='0' or A.Isupdate='2') LEFT JOIN CaseNote_RespiratorySystem AS B ON MAIN.DiagId = B.DiagId and (B.Isupdate='0' or B.Isupdate='2') LEFT JOIN CaseNote_Cardiovascular AS C ON MAIN.DiagId = C.DiagId and (C.Isupdate='0' or C.Isupdate='2') LEFT JOIN CaseNote_Gastrointestinal AS E ON MAIN.DiagId = E.DiagId and (E.Isupdate='0' or E.Isupdate='2') LEFT JOIN CaseNote_Neurology AS F ON MAIN.DiagId = F.DiagId and (F.Isupdate='0' or F.Isupdate='2') LEFT JOIN CaseNote_CNS AS G ON MAIN.DiagId = G.DiagId and (G.Isupdate='0' or G.Isupdate='2') LEFT JOIN CaseNote_Locomotor AS H ON MAIN.DiagId = H.DiagId and (H.Isupdate='0' or H.Isupdate='2') LEFT JOIN CaseNote_OtherSystem AS I ON MAIN.DiagId = I.DiagId and (I.Isupdate='0' or I.Isupdate='2') LEFT JOIN CaseNote_ClinicalData AS J ON MAIN.DiagId = J.DiagId and (J.Isupdate='0' or J.Isupdate='2') LEFT JOIN CaseNote_Renal AS K ON MAIN.DiagId = K.DiagId and (K.Isupdate='0' or K.Isupdate='2') LEFT JOIN CaseNote_Endocrine AS L ON MAIN.DiagId = L.DiagId and (L.Isupdate='0' or L.Isupdate='2') LEFT JOIN CaseNote_PNCSystem AS M ON MAIN.DiagId = M.DiagId and (M.Isupdate='0' or M.Isupdate='2') LEFT JOIN CaseNote_DentalSystem AS N ON MAIN.DiagId = N.DiagId and (N.Isupdate='0' or N.Isupdate='2') WHERE (MAIN.Isupdate = '0' OR MAIN.Isupdate = '2')</string>
+    <string name="operation_schedule">Operation Schedule</string>
+    <string name="submit_next">Submit &amp; Next</string>
+    <string name="are_you_sure_want_to_exit">Are you sure want to exit?</string>
+    <string name="todo">TODO</string>
+    <string name="hide">HIDE</string>
+    <string name="anc">Antental Care - History</string>
+    <string name="hypon">-</string>
+    <string name="referred_from_hospital">Referred From Hospital</string>
+    <string name="referred_to_hospital">Referred To Hospital</string>
+    <string name="patients">Patients</string>
+    <string name="colon"> : </string>
+    <string name="login_pin">LOGIN PIN</string>
+    <string name="enable_casenote_systems">ENABLE CASENOTE SYSTEMS</string>
+    <string name="consult_timing">CONSULTATION TIMING</string>
+    <string name="_5">5</string>
+    <string name="appointment_sms_and_updates">APPOINTMENT SMS AND UPDATES</string>
+    <string name="check_app_updates_automatically">Check app updates automatically</string>
+    <string name="preferred_pharmacy_and_diagnosis_center">PREFERRED PHARMACY AND DIAGNOSIS CENTER</string>
+    <string name="pharmacy_name">pharmacy name</string>
+    <string name="pharmacy_address">pharmacy address</string>
+    <string name="diagnostic_centre_name">diagnostic centre name</string>
+    <string name="diagnostic_centre_address">diagnostic centre address</string>
+    <string name="hospital_name">Hospital Name</string>
+    <string name="specialization">Specialization</string>
+    <string name="set_language">SET LANGUAGE</string>
+    <string name="enter_confirm_password">enter confirm password</string>
+    <string name="enter_new_password">enter new password</string>
+    <string name="enter_current_password">enter current password</string>
+    <string name="enter_medicine_name">Enter medicine name (1) *</string>
+    <string name="choose_medicine_intake_frequency">Choose medicine intake frequency (2) *</string>
+    <string name="choose_medicine_intake_interval">Choose medicine intake interval (3) *</string>
+    <string name="choose_medicine_intake_duration">Choose medicine intake duration (4) *</string>
+    <string name="_1">1</string>
+    <string name="str_nebulization">NEBULIZATION</string>
+    <string name="str_suturing">SUTURING</string>
+    <string name="str_plastering">PLASTERING</string>
+    <string name="enter_dosage">Enter dosage</string>
+    <string name="enter_quantity">Enter Quantity</string>
+    <string name="add_injection">Add Injection</string>
+    <string name="choose_options">Choose options</string>
+    <string name="asthaline_saline">Asthaline Saline</string>
+    <string name="normal_saline">Normal Saline</string>
+    <string name="str_dosage">Dosage</string>
+    <string name="duration_in_days">Duration (In days)</string>
+    <string name="quantity">Quantity</string>
+    <string name="choose_body_part">Choose body part*</string>
+    <string name="slab">SLAB</string>
+    <string name="cast">CAST</string>
+    <string name="enter_injection_name">Enter injection name</string>
+    <string name="pnc">Post Natal Care</string>
+    <string name="skip_to_investigation">SKIP TO INVESTIGATION</string>
+
+    <string name="prev_med_history_charts">Previous Medical History - Charts</string>
+
+
+    <string name="dashboard_patientregistration">Patient\nRegistration</string>
+    <string name="dashboard_casenotes">Case\nNotes</string>
+    <string name="dashboard_clinicalinformation">Clinical\nInformation</string>
+    <string name="dashboard_investigation">Investigations\n</string>
+    <string name="dashboard_prescription">Medicine\nPrescription</string>
+    <string name="dashboard_specialist_referral">Specialist\nReferrals</string>
+    <string name="dashboard_mypatients">My\nPatients</string>
+    <string name="dashboard_drugdirectory">Drug\nDirectory</string>
+    <string name="dashboard_onlineconsultation">Online\nConsultation</string>
+    <string name="dashboard_inpatient">Inpatients\n</string>
+    <string name="dashboard_masters">Masters\n</string>
+    <string name="dashboard_clouds">Cloud\n</string>
+    <string name="patientregistration">Patient Registration</string>
+    <string name="check_update">Check App Update</string>
+
+    <!-- Patient registration -->
+    <string name="str_patient_registration">Patient Registration</string>
+    <string name="str_patient_details">Patient Details</string>
+    <string name="str_patient_photo">Patient Photo</string>
+    <string name="str_patient_name">Patient name</string>
+    <string name="str_age">Age</string>
+    <string name="str_gender">Gender</string>
+    <string name="str_country">Country</string>
+    <string name="str_state">State</string>
+    <string name="str_city">City</string>
+    <string name="str_willingsms">Willing to receive SMS alert?</string>
+    <string name="str_feeexemp">Fee exemption</string>
+    <string name="str_address1">Address 1</string>
+    <string name="str_bloodgroup">Blood group</string>
+    <string name="str_marital">Marital status</string>
+    <string name="str_prefix">Prefix</string>
+    <string name="str_fathername">Father name</string>
+    <string name="str_dob">Date of birth</string>
+    <string name="str_caste">Caste</string>
+    <string name="str_income">Income</string>
+    <string name="str_occupation">Occupation</string>
+    <string name="str_patientaddress">Patient Address</string>
+    <string name="str_address2">Address 2</string>
+    <string name="str_pincode">Pincode</string>
+    <string name="str_email">Email</string>
+    <string name="str_mobile2">Mobile No.2</string>
+    <string name="str_patientcaretaker">Patient care taker details</string>
+    <string name="str_caretaker">Care-taker/Dependent Name</string>
+    <string name="str_contactnumber">Contact Number</string>
+    <string name="str_relationship">Relationship</string>
+    <string name="str_prefernoforsms">Preferred number of SMS Alerts</string>
+    <string name="str_willing_to_blood">Willing to donate blood?</string>
+    <string name="str_willing_to_eyes">Willing to donate eyes?</string>
+    <string name="str_refedoctor">Referred doctor name</string>
+    <string name="str_refdoctormobileno">Referred doctor mobile no</string>
+    <string name="str_insurance">Insurance details</string>
+    <string name="str_policyname">Policy name</string>
+    <string name="str_insurncompany">Name of insurance company</string>
+    <string name="str_amountinsured">Amount Insured (Rs.)</string>
+    <string name="str_validtill">Valid till (Year)</string>
+    <string name="str_authorizehospital">Authorized hospitals</string>
+    <string name="str_otherdetails">Other details</string>
+    <string name="str_aadhardcard">Aadhard card no</string>
+    <string name="str_bplcard">BPL card no</string>
+    <string name="showallpatients">Show all patients</string>
+    <string name="mobile_1">Mobile 1</string>
+    <string name="self">Self</string>
+    <string name="patient_care_taker_details">Patient care taker details</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_rememberme">Remember Me</string>
+    <string name="login_fogrtpassword">Forgot Password</string>
+    <string name="login_btn">Login</string>
+    <string name="for_child">For Child</string>
+    <string name="upper_right_jaw_line">Upper Right Jaw Line</string>
+    <string name="upper_left_jaw_line">Upper Left Jaw Line</string>
+    <string name="lower_right_jaw_line">Lower Right Jaw Line</string>
+    <string name="lower_left_jaw_line">Lower Left Jaw Line</string>
+    <string name="for_adult">For Adult</string>
+    <string name="date_of_delivery">Date of delivery</string>
+    <string name="place_of_delivery">Place of delivery</string>
+    <string name="type_of_delivery">Type of delivery</string>
+    <string name="term_preterm">Term/Preterm</string>
+    <string name="if_at_institution_period_of_stay_post_delivery">If at institution period of stay post delivery</string>
+    <string name="complications_if_any_specify">Complications, if any (Specify)</string>
+    <string name="sex_of_baby">Sex of Baby</string>
+    <string name="weight_of_baby">Weight of Baby</string>
+    <string name="cried_immedietely_after_birth">Cried immedietely after birth</string>
+    <string name="initiated_exclusive_breast_feeding_within_1_hour_of_birth">Initiated exclusive breast feeding within 1 hour of birth</string>
+    <string name="three_extra_visits_if_birth_weight_2_5kg">*(Three extra visits if birth weight 2.5kg)</string>
+    <string name="post_portum_care">POST PORTUM CARE</string>
+    <string name="any_complaints">Any Complaints</string>
+    <string name="pallor">Pallor</string>
+    <string name="str_temperature">Temperature</string>
+    <string name="family_planning_counselling">Family planning counselling</string>
+    <string name="any_other_complications_and_referral">Any other complications and referral</string>
+    <string name="care_of_baby">CARE OF BABY</string>
+    <string name="urine_passed">Urine passed</string>
+    <string name="stool_passed">Stool passed</string>
+    <string name="diarrhea">Diarrhea</string>
+    <string name="vomiting">Vomiting</string>
+    <string name="convulsions">Convulsions</string>
+    <string name="condition_of_umbilical_stump">Condition of umbilical stump</string>
+    <string name="activity">Activity</string>
+    <string name="sucking">Sucking</string>
+    <string name="breathing">Breathing</string>
+    <string name="chest_indrawing">Chest indrawing</string>
+    <string name="skin_pustules">Skin pustules</string>
+    <string name="any_other_complications">Any other complications</string>
+    <string name="vaccinename">Vaccine name</string>
+    <string name="schedule">Schedule</string>
+    <string name="scanname">Scan Name</string>
+    <string name="subscanname">Sub Scan Name</string>
+
+    <string name="str_history">History</string>
+    <string name="diseases">Diseases</string>
+    <string name="smoking_habit">Smoking Habit</string>
+    <string name="alcohol_habit">Alcohol Habit</string>
+    <string name="tobacco_habit">Tobacco Habit</string>
+    <string name="previous_pregenancy">Previous Pregnancy</string>
+    <string name="str_temp">Temperature(ºF)</string>
+    <string name="blood_pressure_nsystolic">Blood Pressure Systolic</string>
+    <string name="blood_pressure_ndiastolic">Blood Pressure Diastolic</string>
+    <string name="is_breath_sound_equal">Is breath sound equal</string>
+    <string name="injection">INJECTION</string>
+
+
+    <string name="clinicaldetail">CLINIC DETAILS</string>
+    <string name="doctor_signature">Doctor Signature</string>
+
+
+</resources>
